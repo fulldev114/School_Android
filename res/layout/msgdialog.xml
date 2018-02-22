@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:id="@+id/rootView"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_centerHorizontal="true"
+                  android:layout_centerVertical="true"
+                  android:layout_marginLeft="@dimen/fiften_space"
+                  android:layout_marginRight="@dimen/fiften_space"
+                  android:background="@drawable/alert_dialog_bg"
+                  android:gravity="center"
+                  android:orientation="vertical"
+                  android:padding="@dimen/five_all_side_padding">
+
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="right"
+                   android:layout_margin="@dimen/ten_all_side_padding"
+                   android:src="@drawable/cs"/>
+
+        <com.widget.textstyle.MyTextView_Signika_Bold
+            android:id="@+id/msgtitle"
+            style="@style/alert_dialog_text"
+            android:text="@string/str_alert"
+            android:textSize="@dimen/large_text_size"
+            android:textStyle="bold"
+            android:visibility="gone"
+            />
+
+        <com.widget.textstyle.MyTextView_Signika_Bold
+            android:id="@+id/summary"
+            style="@style/alert_dialog_text"
+            android:text="@string/msg_confirm_logout"
+            android:textSize="@dimen/normal_text_size"
+            android:visibility="gone"
+            />
+
+        <com.widget.textstyle.MyTextView_Signika_Bold
+            android:id="@+id/msgcontent"
+            style="@style/alert_dialog_text"
+            android:textSize="@dimen/normal_text_size"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <CheckBox android:id="@+id/update_checkbox"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="3pt"
+                      android:layout_marginRight="3pt"
+                      android:button="@drawable/checkbox_image"
+                      android:checked="false"
+                      android:padding="@dimen/five_all_side_padding"
+                      android:text="@string/update_dontshow"
+                      android:textColor="@color/alert_blue"
+                      android:textSize="@dimen/normal_text_size"
+                      android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/half_dpi"
+            android:layout_marginLeft="@dimen/ten_all_side_padding"
+            android:layout_marginRight="@dimen/ten_all_side_padding"
+            android:layout_marginTop="@dimen/ten_all_side_padding"
+            android:background="@color/color_white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/twenty_size"
+            android:paddingRight="@dimen/twenty_size"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/twenty_size"
+            android:paddingRight="@dimen/twenty_size"
+            >
+
+
+            <com.widget.textstyle.MyButton_Signika_Bold
+                android:id="@+id/btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty_margin"
+                android:layout_margin="@dimen/ten_all_side_padding"
+                android:layout_weight="1"
+                android:background="@drawable/txt_cmd_blue"
+                android:text="@string/str_yes"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/normal_text_size"/>
+
+            <com.widget.textstyle.MyButton_Signika_Bold
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty_margin"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/txt_cmd_blue"
+                android:text="@string/str_no"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/normal_text_size"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

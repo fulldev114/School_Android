@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="left|center"
+            android:orientation="horizontal"
+            >
+            <RelativeLayout android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp">
+                <com.common.view.CircularImageView
+                    android:id="@+id/img_outer"
+                    android:layout_width="@dimen/fifty_five"
+                    android:layout_height="@dimen/fifty_five"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/circle_blue_full"
+                    android:visibility="visible"/>
+                <com.common.view.CircularImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="@dimen/fifty_top"
+                    android:layout_height="@dimen/fifty_top"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/cslink_avatar_unknown"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/linear_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/img_right_arrow"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            >
+                            <com.widget.textstyle.MyTextView_Signika_Regular
+                                android:id="@+id/textView_teachername"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/five_all_side_padding"
+                                android:layout_toRightOf="@+id/imageView1"
+                                android:padding="@dimen/five_all_side_padding"
+                                android:text="Ashish Sharma"
+                                android:textColor="@color/light_blue"
+                                android:textSize="@dimen/normal_text_size"
+                                />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="right"
+                                android:orientation="horizontal"
+                                android:paddingRight="20dp"
+                                >
+                                <com.widget.textstyle.MyTextView_Signika_Regular
+                                    android:id="@+id/txtDate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:padding="5dp"
+                                    android:text="2015-11-15"
+                                    android:textColor="@color/color_blue"
+                                    android:textSize="@dimen/micro_text_size"/>
+                                <com.widget.textstyle.MyTextView_Signika_Regular
+                                    android:id="@+id/txtBadge"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/btn_badge"
+                                    android:paddingLeft="4dp"
+                                    android:paddingRight="4dp"
+                                    android:text="1"
+                                    android:textColor="@color/color_white"
+                                    android:textSize="@dimen/badge_text_size"
+                                    android:visibility="gone"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <RelativeLayout android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/inc_gp_bdg"
+                                style="@style/linbadge"
+                                android:layout_alignParentRight="true"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="@dimen/five_all_side_padding"
+                                android:visibility="visible">
+                                <com.widget.textstyle.MyTextView_Signika_Regular
+                                    android:id="@+id/txtBadge_gp"
+                                    style="@style/badge"
+                                    />
+                            </LinearLayout>
+                            <com.widget.textstyle.MyTextView_Signika_Regular
+                                android:id="@+id/textView_subject"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/five_all_side_padding"
+                                android:layout_alignParentLeft="true"
+                                android:padding="@dimen/three_space"
+                                android:layout_toLeftOf="@+id/inc_gp_bdg"
+                                android:textColor="@color/white_light"
+                                android:textSize="@dimen/micro_text_size"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/img_right_arrow"
+                        android:layout_width="@dimen/thirty_top"
+                        android:layout_height="@dimen/thirty_top"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:padding="@dimen/five_all_side_padding"
+                        android:src="@drawable/next_blue"/>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/one_half_dpi"
+                    android:layout_alignLeft="@+id/linear_text"
+                    android:layout_below="@+id/linear_text"
+                    android:layout_marginTop="@dimen/ten_all_side_padding"
+                    android:background="@color/white_light"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

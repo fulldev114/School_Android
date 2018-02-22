@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools"
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       tools:showIn="@layout/fragment_calendar">
+
+
+    <ImageView
+        android:id="@+id/material_calendar_previous"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/back_arrow1"
+        android:contentDescription="@string/calendar_previous"/>
+
+    <ImageView
+        android:id="@+id/material_calendar_next"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="64dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/back_arrow1"
+        android:rotation="180"
+        android:contentDescription="@string/calendar_next"/>
+
+    <TextView
+        android:id="@+id/material_calendar_month_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/material_calendar_previous"
+        android:layout_alignTop="@+id/material_calendar_previous"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/calendar_month_text_color"/>
+
+    <GridView
+        android:id="@+id/material_calendar_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/material_calendar_month_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:choiceMode="singleChoice"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="7"
+        android:scrollbars="none"
+        android:horizontalSpacing="8dp"
+        android:verticalSpacing="6dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:id="@+id/calendar_divider"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/material_calendar_gridView"
+        android:background="@android:color/darker_gray"/>
+</merge>

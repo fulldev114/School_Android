@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/five_all_side_padding"
+        android:layout_marginRight="@dimen/five_all_side_padding"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rel_cover_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+            <RelativeLayout
+                android:id="@+id/rel_image"
+                style="@style/rel_item"
+                android:visibility="visible">
+                <com.common.view.CircularImageView
+                    android:id="@+id/circle"
+                    style="@style/circle_image"
+                    android:layout_width="@dimen/fifty_top"
+                    android:layout_height="@dimen/fifty_top"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/imageView1"
+                    style="@style/circle_image"
+                    android:layout_width="@dimen/fifty_top"
+                    android:layout_height="@dimen/fifty_top"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_image_school"
+                style="@style/rel_item"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/five_all_side_padding"
+                >
+
+                <ImageView
+                    android:id="@+id/img_school"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/school_icon"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/linear_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/twenty_size"
+            android:layout_toRightOf="@+id/rel_cover_image">
+
+            <LinearLayout
+                style="@style/linear_margin_less"
+                android:layout_toLeftOf="@+id/img_right_arrow"
+                android:orientation="vertical"
+                >
+                <com.widget.textstyle.MyTextView_Signika_Bold
+                    android:id="@+id/textView_teachername"
+                    style="@style/textview"
+                    android:text="@string/str_isstudentname"
+                    android:textColor="@color/color_green"
+                    android:textSize="@dimen/small_text_size"
+                    />
+                <com.widget.textstyle.MyTextView_Signika_Regular
+                    android:id="@+id/textView_subject"
+                    style="@style/textview"
+                    android:layout_alignLeft="@+id/textView_teachername"
+                    android:layout_below="@+id/textView_teachername"
+                    android:text="English"
+                    android:textColor="@color/white_light"
+                    android:textSize="@dimen/micro_text_size"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/five_all_side_padding"
+                android:orientation="vertical"
+                >
+                <com.widget.textstyle.MyTextView_Signika_Regular
+                    android:id="@+id/txtBadge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_badge"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/four_dp"
+                    android:paddingRight="@dimen/four_dp"
+                    android:text=""
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/badge_text_size"
+                    android:visibility="visible"
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_right_arrow"
+                android:layout_width="@dimen/thirty_top"
+                android:layout_height="@dimen/thirty_top"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/five_all_side_padding"
+                android:rotation="180"
+                android:src="@drawable/back_left_arrow"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/half_dpi"
+            android:layout_alignLeft="@+id/linear_text"
+            android:layout_below="@+id/linear_text"
+            android:layout_marginTop="@dimen/ten_all_side_padding"
+            android:background="@color/color_line_blue"/>
+    </RelativeLayout>
+
+</LinearLayout>

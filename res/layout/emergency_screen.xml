@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/background"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/header_activity"
+        />
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:minHeight="@dimen/fifty_five"
+                  android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rel_system"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/view_system"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/half_dpi"
+                android:layout_alignParentTop="true"
+                android:background="@color/color_blue_p"/>
+
+            <com.widget.textstyle.MyTextView_Signika_Bold
+                android:id="@+id/txt_system"
+                style="@style/emrgency_message_text"
+                android:text="@string/system_generated"
+                android:textColor="@color/color_blue_p"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_custom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/view_custom"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/half_dpi"
+                android:layout_alignParentTop="true"
+                />
+
+            <com.widget.textstyle.MyTextView_Signika_Bold
+                android:id="@+id/txt_custom"
+                style="@style/emrgency_message_text"
+                android:text="@string/custom_generated"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/view_message"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/half_dpi"
+                android:layout_alignParentTop="true"
+                />
+
+            <com.widget.textstyle.MyTextView_Signika_Bold
+                android:id="@+id/txt_message"
+                style="@style/emrgency_message_text"
+                android:text="@string/str_message"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one_dp"
+        android:background="@color/light_line_blue"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:id="@+id/lin_fragmentemergency"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/ten_all_side_padding"
+        android:layout_marginTop="@dimen/five_all_side_padding"
+        android:orientation="vertical"/>
+</LinearLayout>

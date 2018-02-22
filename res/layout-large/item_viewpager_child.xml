@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/ten_all_side_padding"
+                android:orientation="vertical">
+
+
+    <RelativeLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+        >
+        <RelativeLayout
+            android:id="@+id/rel_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <com.common.view.CircularImageView
+                android:id="@+id/bg_circle"
+                android:layout_width="@dimen/sixty_size_large"
+                android:layout_height="@dimen/sixty_size_large"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/circle_white_empty"
+                android:visibility="visible"/>
+            <com.common.view.CircularImageView
+                android:id="@+id/imageView1"
+                android:layout_width="@dimen/fifty_five"
+                android:layout_height="@dimen/fifty_five"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/cslink_avatar_unknown"/>
+
+            <include
+                android:id="@+id/inc1"
+                layout="@layout/badgeactivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/bg_circle"
+                />
+
+        </RelativeLayout>
+        <com.widget.textstyle.MyTextView_Signika_Regular
+            android:id="@+id/txt_childnm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rel_img"
+            android:layout_alignRight="@+id/rel_img"
+            android:layout_below="@+id/rel_img"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/five_all_side_padding"
+            android:gravity="center"
+            android:text="@string/str_isstudentname"
+            android:textColor="@color/white_light"
+            android:textSize="@dimen/tweleve_sp"/>
+        <View
+            android:id="@+id/line"
+            android:layout_width="@dimen/half_dpi"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rel_img"
+            android:layout_marginLeft="@dimen/twenty_seven"
+            android:layout_toRightOf="@+id/rel_img"
+            android:background="@color/white_light"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

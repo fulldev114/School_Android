@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:id="@+id/rootView"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/fiften_space"
+        android:layout_marginRight="@dimen/fiften_space"
+        android:background="@drawable/alert_dialog_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/five_all_side_padding">
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fiften_space"
+            android:layout_marginRight="@dimen/fiften_space"
+            android:layout_gravity="right"
+            android:src="@drawable/close_blue"/>
+
+        <com.widget.textstyle.MyTextView_Signika_Bold
+            android:id="@+id/msgtitle"
+            style="@style/alert_dialog_text"
+            android:text="@string/checked_in_title_low"
+            android:textSize="@dimen/xlarge_text_size"
+            android:textStyle="bold"
+            android:textColor="@color/neavy_blue"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/fiften_space"
+            android:paddingLeft="@dimen/twenty_size"
+            android:paddingRight="@dimen/twenty_size"
+            android:layout_marginBottom="@dimen/twenty_size">
+
+            <com.widget.textstyle.MyButton_Signika_Bold
+                android:id="@+id/btn_sfo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty_top"
+                android:layout_margin="@dimen/ten_all_side_padding"
+                android:layout_weight="1"
+                android:background="@drawable/txt_cmd_blue"
+                android:text="@string/sfo_title"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/large_text_size"/>
+
+            <com.widget.textstyle.MyButton_Signika_Bold
+                android:id="@+id/btn_activity"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty_top"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/txt_cmd_dark_blue"
+                android:text="@string/activity_title_low"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/large_text_size"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

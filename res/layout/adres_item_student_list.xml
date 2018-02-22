@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/five_all_side_padding">
+
+    <LinearLayout
+        android:id="@+id/lin_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+        <com.widget.textstyle.MyTextView_Signika_Regular
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:text="name"
+            android:textColor="@color/light_green"
+            android:textSize="@dimen/normal_text_size"
+            />
+       <!-- <RelativeLayout
+            android:id="@+id/lytGrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/five_all_side_padding"
+            android:layout_marginRight="@dimen/three_space"
+            >
+
+            <Spinner android:id="@+id/imageView1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@null"
+                     android:paddingLeft="0dp"
+                     android:popupBackground="@color/white_light"
+                     android:spinnerMode="dropdown"
+                     android:textColorHint="@color/white_light"
+                />
+        <ImageView
+            android:id="@+id/imgGradeArrow"
+            android:layout_width="@dimen/menu_img_size"
+            android:layout_height="@dimen/menu_img_size"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/dropdown"/>
+        </RelativeLayout>-->
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:focusable="false"
+            android:padding="@dimen/five_all_side_padding"
+            android:src="@drawable/dropdown"/>
+    </LinearLayout>
+
+    <CheckBox android:id="@+id/chk_item"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:button="@drawable/adres_checkbox_white_image"
+              android:gravity="center_vertical"
+              android:padding="@dimen/ten_all_side_padding"
+              android:textColor="@color/white_light"
+              android:textSize="@dimen/normal_text_size"
+              android:visibility="visible"/>
+   <!-- <ListView
+        android:id="@+id/lst_selected_msg"
+        style="@style/scroll_bar"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />-->
+</RelativeLayout>

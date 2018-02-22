@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cloudstream.cslink"
+    android:versionCode="9"
+    android:versionName="1.7"> <!-- version name=1.0: without mark and character -->
+    <!-- version name=1.1 : with Mark and dicipline-behaviour module and update version bug solved -->
+    <!-- version name=1.2 : Message Badge issue solved, copy- paste translation change -->
+    <!-- version name=1.3 : change notification icon in GCMINTENTSERVICE.java file -->
+    <!--
+version name=1.4 : Receive chat notification again when resume app solved , chat badge counter on student name
+     , sometimes get offline message even student is online so keep condition in GCMIntenetService.java, generate Markpdf from server
+    -->
+    <!-- version name: 1.5 : Min date selection issue in Register absent  and Absent Statistics, change code Dt: 10-01-2017 -->
+    <!-- version name:1.6 : Push notificaiton in some device, contactus email is not receive in inbox -->
+    <!-- version name:1.7 : group message time convert into localization -->
+    <!-- version name:1.7 : message - change design of copy button, set default Paste functionality. set copy text to clipboard -->
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="22" />
+
+    <permission
+        android:name="android.permission.FLASHLIGHT"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+    <!-- HTC -->
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+    <!--   ...............................GCM................... -->
+    -
+    <!--   Creates a custom permission so only this app can receive its messages. -->
+    <permission
+        android:name="com.cloudstream.cslink.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.cloudstream.cslink.permission.C2D_MESSAGE" />
+    -
+    <!--   This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    -
+    <!--   GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    -
+    <!--   Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    -
+    <!--   Permission to vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".Global"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Splash_Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/android:Theme.Holo.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".parent.PasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".calendar.CalendarActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".parent.ParentLoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".parent.PhotoCropActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".parent.VerifyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".parent.Pincode_activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".parent.SelectChildActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".parent.AddChildActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".parent.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".parent.ChangePincode"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
+            android:name=".parent.ChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
+            android:name=".parent.AboutUs"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".parent.SchoolGradeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".parent.SchoolActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".parent.RegisterMainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".parent.GroupMessageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".parent.EmergencyAlertActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".parent.FragmentAbsent"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".parent.FragmentChat"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".parent.EmeregencyPopupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".parent.UpdateAvailableActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".parent.SlideShowActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name="org.acra.CrashReportDialog"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".parent.ActivityLog"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".teacher.PasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".teacher.TeacherLoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".teacher.PhotoCropActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".teacher.VerifyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".teacher.Pincode_activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".teacher.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".teacher.ChangePincode"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
+            android:name=".teacher.ChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+
+        <activity
+            android:name=".teacher.ChatActivity_Teacher"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
+            android:name=".teacher.AboutUs"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".teacher.StudentApproveRejectActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+
+        <activity
+            android:name=".teacher.ActivityAddMark"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+
+        <activity
+            android:name=".teacher.ReportCardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+
+        <activity
+            android:name=".teacher.EmergencyAlertActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".teacher.FragmentChat"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".teacher.FragmentGroupMessage"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
+            android:name=".teacher.FragmentAttendance"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".teacher.FragmentStudentSetting"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".teacher.FragmentTeacher"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".teacher.TeacherSFOHomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".common.activities.ActivitiesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".common.activities.ActivityDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".teacher.StudentActivitiesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".teacher.StudentNotArrivedActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".teacher.StudentSFOActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".teacher.StudentCheckedOutActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".teacher.NotificationsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".teacher.SetCheckedInActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".teacher.SetCheckedOutActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".teacher.EmeregencyPopupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".teacher.UpdateAvailableActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".teacher.SlideShowActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".teacher.ActivityLog"
+            android:screenOrientation="portrait" />
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.teacher.apps" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.teacher.apps" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.appsbusiness.cslink.GCMIntentService" />
+        <service
+            android:name=".teacher.MyGcmListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <!-- [END gcm_listener] -->
+        <!-- [START instanceId_listener] -->
+        <service
+            android:name=".teacher.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <!-- [END instanceId_listener] -->
+        <service
+            android:name=".teacher.RegistrationIntentService"
+            android:exported="false">
+        </service>
+
+        <!-- check internet connectivity -->
+        <receiver android:name="com.service.parent.UpdateReceiverInternet">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.service.parent.ReconnectionService" />
+        <service
+            android:name="com.service.parent.NotificationJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE">
+        </service>
+        <service
+            android:name="com.service.teacher.NotificationJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE">
+        </service>
+
+        <activity android:name="com.cloudstream.cslink.StartActivity"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/ten_all_side_padding"
+                android:paddingRight="@dimen/ten_all_side_padding"
+                android:paddingTop="@dimen/ten_all_side_padding"
+                android:weightSum="1">
+
+    <ScrollView
+        style="@style/scroll_bar"
+        android:layout_above="@+id/lin_update"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1"
+                >
+                <RelativeLayout
+                    android:id="@+id/rel"
+                    android:layout_width="@dimen/large_profile_img_size"
+                    android:layout_height="@dimen/large_profile_img_size"
+                    android:layout_gravity="center"
+
+                    >
+                    <com.common.view.CircularImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="0dp"
+                        android:src="@drawable/circle_blue_full"
+                        android:scaleType="fitXY"
+                        />
+                    <com.absents.apps.RoundedImageView
+                        android:id="@+id/img_profile"
+                        android:layout_width="@dimen/one_thirty_size"
+                        android:layout_height="@dimen/one_thirty_size"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/three_space"
+                        />
+                    <!--com.absents.apps.RoundedImageView-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        >
+
+                        <com.common.view.CircularImageView
+                            android:id="@+id/imgPlus"
+                            android:layout_width="@dimen/twenty_size"
+                            android:layout_height="@dimen/twenty_size"
+                            android:layout_marginRight="0dp"
+                            android:src="@drawable/addplusicon"
+                            />
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/rel"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/edit_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_cmd"
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        >
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/three_space"
+                            android:layout_toLeftOf="@+id/textView2"
+                            android:src="@drawable/edit_btn"/>
+                        <com.widget.textstyle.MyTextView_Signika_Regular
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/five_all_side_padding"
+                            android:gravity="center"
+                            android:text="@string/str_edit"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/small_text_size"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ten_all_side_padding"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/ten_all_side_padding"
+                        android:weightSum="1"
+                        >
+                        <com.widget.textstyle.MyTextView_Signika_Regular
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".35"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/five_all_side_padding"
+                            android:paddingLeft="@dimen/two_dp"
+                            android:paddingTop="@dimen/five_all_side_padding"
+                            android:text="@string/str_name"
+                            android:textColor="@color/white_light"
+                            android:textSize="@dimen/small_text_size"
+                            android:visibility="gone"/>
+                        <com.widget.textstyle.MyEdiText_Signika_Regular
+                            android:id="@+id/textView_childname"
+                            style="@style/profile_edit"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:editable="true"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:textStyle="normal"
+                            />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/twenty_size"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/five_all_side_padding">
+
+                        <com.widget.textstyle.MyTextView_Signika_Semibold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/school_info"
+                            android:textColor="@color/color_blue_p"
+                            android:textSize="@dimen/micro_text_size"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/one_half_dpi"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/five_all_side_padding"
+                            android:background="@color/color_blue_p"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/five_all_side_padding"
+                        android:visibility="visible"
+                        android:weightSum="1">
+                        <LinearLayout style="@style/profile_linear">
+                            <ImageView android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:layout_margin="@dimen/five_all_side_padding"
+                                       android:src="@drawable/school_icon"/>
+                            <com.widget.textstyle.MyTextView_Signika_Regular
+                                style="@style/profile_textview"
+                                android:text="@string/str_school_withoutdot"
+                                />
+                        </LinearLayout>
+                        <com.widget.textstyle.MyTextView_Signika_Regular
+                            android:id="@+id/textView_school"
+                            style="@style/profile_edit"
+                            android:singleLine="false"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/one_dp"
+                        android:background="@color/white_light"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/lyt_class"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/five_all_side_padding"
+                        android:visibility="visible"
+                        android:weightSum="1">
+                        <LinearLayout style="@style/profile_linear">
+                            <ImageView android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:layout_margin="@dimen/five_all_side_padding"
+                                       android:src="@drawable/class_icon"/>
+                            <com.widget.textstyle.MyTextView_Signika_Regular
+                                android:id="@+id/textView_class"
+                                style="@style/profile_textview"
+                                android:text="@string/str_class_withoutdot"
+                                />
+                        </LinearLayout>
+                        <com.widget.textstyle.MyEdiText_Signika_Regular
+                            android:id="@+id/editText_class"
+                            style="@style/profile_edit"
+                            />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/one_dp"
+                        android:background="@color/white_light"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/lytClassIncharge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/five_all_side_padding"
+                        android:visibility="visible"
+                        android:weightSum="1">
+                        <LinearLayout style="@style/profile_linear">
+                            <ImageView android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:layout_margin="@dimen/five_all_side_padding"
+                                       android:src="@drawable/class_incharge"/>
+                            <com.widget.textstyle.MyTextView_Signika_Regular
+                                android:id="@+id/textView_classincharge"
+                                style="@style/profile_textview"
+                                android:text="@string/profile_classincharge_withoutdot"
+
+                                />
+                        </LinearLayout>
+                        <com.widget.textstyle.MyEdiText_Signika_Regular
+                            android:id="@+id/editText_classincharge"
+                            style="@style/profile_edit"
+                            android:singleLine="false"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/twenty_size"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/five_all_side_padding"
+                    >
+
+                    <com.widget.textstyle.MyTextView_Signika_Semibold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/parent_info"
+                        android:textColor="@color/color_green"
+                        android:textSize="@dimen/micro_text_size"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/one_dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/five_all_side_padding"
+                        android:background="@color/color_green"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_height"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/three_space"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        style="@style/profile_linear">
+                        <ImageView android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_margin="@dimen/five_all_side_padding"
+                                   android:src="@drawable/parent1"/>
+                        <com.widget.textstyle.MyTextView_Signika_Regular
+                            android:id="@+id/textView_parent1"
+                            style="@style/profile_textview"
+                            android:gravity="center"
+                            android:text="@string/parent1"
+                            />
+                    </LinearLayout>
+
+                    <com.widget.textstyle.MyEdiText_Signika_Regular
+                        android:id="@+id/editText_parent1"
+                        style="@style/profile_edit"
+                        android:singleLine="false"/>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/one_dp"
+                    android:background="@color/white_light"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_all_side_padding"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        style="@style/profile_linear">
+                        <ImageView android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_margin="@dimen/five_all_side_padding"
+                                   android:src="@drawable/mobile"/>
+                        <com.widget.textstyle.MyTextView_Signika_Regular
+                            android:id="@+id/textView_phone"
+                            style="@style/profile_textview"
+                            android:gravity="center"
+                            android:text="@string/profile_hint_phone_withoutdot"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="0.50"
+                                  android:orientation="vertical">
+                        <com.widget.textstyle.MyEdiText_Signika_Regular
+                            android:id="@+id/editText_phone"
+                            style="@style/profile_edit"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:singleLine="true"/>
+
+                        <com.widget.textstyle.MyTextView_Signika_Regular
+                            android:id="@+id/txtStatus1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:padding="@dimen/five_all_side_padding"
+                            android:text="@string/str_actived"
+                            android:textColor="@color/white_light"
+                            android:textSize="@dimen/small_text_size"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/one_dp"
+                    android:background="@color/white_light"
+                    />
+                <!-- Parent2 Start-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/five_all_side_padding"
+                    android:layout_marginTop="@dimen/five_all_side_padding"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        style="@style/profile_linear">
+                        <ImageView android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_margin="@dimen/five_all_side_padding"
+                                   android:src="@drawable/parent2"/>
+                        <com.widget.textstyle.MyTextView_Signika_Regular
+                            android:id="@+id/textView_parent2"
+                            style="@style/profile_textview"
+                            android:gravity="center"
+                            android:text="@string/parent2"
+                            />
+                    </LinearLayout>
+
+
+                    <com.widget.textstyle.MyEdiText_Signika_Regular
+                        android:id="@+id/editText_parent2"
+                        style="@style/profile_edit"
+                        android:singleLine="false"/>
+
+                </LinearLayout>
+
+                <!--parent2 end-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/one_dp"
+                    android:background="@color/white_light"
+                    />
+                <!--mobile number 2 start-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_all_side_padding"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        style="@style/profile_linear">
+                        <ImageView android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_margin="@dimen/five_all_side_padding"
+                                   android:src="@drawable/mobile"/>
+                        <com.widget.textstyle.MyTextView_Signika_Regular
+                            android:id="@+id/textView_phone2"
+                            style="@style/profile_textview"
+                            android:gravity="center"
+                            android:text="@string/profile_hint_phone_withoutdot"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="0.50"
+                                  android:orientation="vertical">
+                        <com.widget.textstyle.MyEdiText_Signika_Regular
+                            android:id="@+id/editText_phone2"
+                            style="@style/profile_edit"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:singleLine="true"/>
+
+                        <com.widget.textstyle.MyTextView_Signika_Regular
+                            android:id="@+id/txtStatus2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:padding="@dimen/five_all_side_padding"
+                            android:text="@string/str_inactived"
+                            android:textColor="@color/white_light"
+                            android:textSize="@dimen/small_text_size"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <!--mobile number 2 end-->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/one_dp"
+                    android:background="@color/white_light"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_height"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="1"
+                    >
+                    <com.widget.textstyle.MyTextView_Signika_Regular
+                        android:id="@+id/textView_moblie"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".4"
+                        android:gravity="right|center"
+                        android:padding="@dimen/five_all_side_padding"
+                        android:text="@string/update_profile_mobile"
+                        android:textColor="@color/white_light"
+                        android:textSize="@dimen/small_text_size"/>
+
+                    <com.widget.textstyle.MyEdiText_Signika_Regular
+                        android:id="@+id/editText_mobile"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:background="@null"
+                        android:editable="true"
+                        android:enabled="false"
+                        android:gravity="left|center"
+                        android:padding="@dimen/five_all_side_padding"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/color_blue"
+                        android:textSize="@dimen/small_text_size">
+                    </com.widget.textstyle.MyEdiText_Signika_Regular>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lytContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/white_light"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/five_all_side_padding"
+                        android:layout_marginTop="@dimen/five_all_side_padding"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            style="@style/profile_linear">
+                            <ImageView android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:layout_margin="@dimen/five_all_side_padding"
+                                       android:src="@drawable/parent1"/>
+                            <com.widget.textstyle.MyTextView_Signika_Regular
+                                style="@style/profile_textview"
+                                android:text="@string/profile_hint_contact"
+                                />
+                        </LinearLayout>
+
+                        <com.widget.textstyle.MyEdiText_Signika_Regular
+                            android:id="@+id/txtContactName"
+                            style="@style/profile_edit"
+                            android:singleLine="false"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/white_light"
+                        />
+
+                    <!--Mobile3 Start-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ten_all_side_padding"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            style="@style/profile_linear">
+                            <ImageView android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:layout_margin="@dimen/five_all_side_padding"
+                                       android:src="@drawable/mobile"/>
+                            <com.widget.textstyle.MyTextView_Signika_Regular
+                                style="@style/profile_textview"
+                                android:text="@string/profile_hint_phone_withoutdot"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:layout_weight="0.48"
+                                      android:orientation="vertical">
+                            <com.widget.textstyle.MyEdiText_Signika_Regular
+                                android:id="@+id/txtContactMobile"
+                                style="@style/profile_edit"
+                                android:inputType="number"
+                                android:maxLength="8"
+                                android:singleLine="true"
+                                android:visibility="visible"/>
+
+                            <com.widget.textstyle.MyTextView_Signika_Regular
+                                android:id="@+id/txtStatus3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:padding="@dimen/five_all_side_padding"
+                                android:text="@string/str_inactived"
+                                android:textColor="@color/white_light"
+                                android:textSize="@dimen/small_text_size"
+                                android:visibility="gone"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--Mobile3 End-->
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/lin_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/twenty_size"
+        android:layout_marginTop="@dimen/twenty_size"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginRight="@dimen/five_all_side_padding"
+                      android:layout_weight="1"
+                      android:background="@drawable/btn_cmd_p"
+                      android:gravity="center"
+                      android:minHeight="@dimen/btn_height"
+                      android:orientation="horizontal">
+            <com.widget.textstyle.MyTextView_Signika_Bold
+                android:id="@+id/textView_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/five_all_side_padding"
+                android:text="@string/update_profile_header"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/small_text_size"
+                android:textStyle="bold"
+                android:visibility="visible"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/five_all_side_padding"
+                android:src="@drawable/update_profile"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ly_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/five_all_side_padding"
+            android:layout_weight="1"
+            android:background="@drawable/btn_cmd_p"
+            android:gravity="center"
+            android:minHeight="@dimen/btn_height"
+            android:orientation="horizontal">
+            <com.widget.textstyle.MyTextView_Signika_Bold
+                android:id="@+id/txtcancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/five_all_side_padding"
+                android:text="@string/cancel"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/small_text_size"
+                android:textStyle="bold"
+                android:visibility="visible"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

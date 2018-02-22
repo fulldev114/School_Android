@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+    <!-- <include
+         android:id="@+id/incl_about"
+         layout="@layout/header_activity"/>
+ -->
+    <ScrollView style="@style/scroll_bar"
+       android:layout_height="match_parent" >
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/ImageAppLogog"
+                    android:layout_marginTop="@dimen/thirty_top"
+                    android:padding="0dp"
+                    android:src="@drawable/adres_side_csadm_logo"/>
+
+                <com.widget.textstyle.MyTextView_Signika_Regular
+                    android:id="@+id/txt_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:padding="@dimen/fiften_space"
+                    android:text="@string/aboutus_app"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/normal_text_size"/>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:layout_alignParentBottom="true" android:layout_below="@+id/header"
+                          android:layout_gravity="bottom"
+                          android:orientation="vertical"
+                          android:padding="@dimen/twenty_size">
+                <com.widget.textstyle.MyTextView_Signika_Regular
+                    style="@style/txt_about"
+                    android:text="@string/more_info"/>
+                <com.widget.textstyle.MyTextView_Signika_Regular
+                    android:id="@+id/txt_support"
+                    style="@style/txt_about"
+                    android:text="@string/suppport"
+                    android:textColor="@color/white_light"
+                    />
+                <com.widget.textstyle.MyTextView_Signika_Regular
+                    android:id="@+id/txt_link"
+                    style="@style/txt_about"
+                    android:text="@string/about_link"
+                    android:textColor="@color/white_light"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

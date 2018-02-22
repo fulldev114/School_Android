@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/background"
+              android:orientation="vertical">
+
+    <ScrollView
+        style="@style/scroll_bar"
+        >
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical"
+                      android:paddingBottom="@dimen/twenty_size">
+
+            <ImageView
+                style="@style/ImageAppLogog"
+                android:src="@drawable/logo_cslink"/>
+
+            <LinearLayout
+                style="@style/linearlayout_login"
+                android:background="@drawable/liner_white_border"
+                android:minHeight="@dimen/btn_height"
+                android:orientation="horizontal">
+                <ImageView android:layout_width="@dimen/profile_img_size"
+                           android:layout_height="@dimen/profile_img_size"
+                           android:layout_gravity="center"
+                           android:padding="@dimen/ten_all_side_padding"
+                           android:src="@drawable/mobile"/>
+                <com.widget.textstyle.MyTextView_Signika_Light
+                    style="@style/textview_mobile_login"
+                    android:text="@string/number"
+                    android:textSize="@dimen/large_text_size"/>
+
+                <com.widget.textstyle.MyEditText_Signika_Light
+                    android:id="@+id/et_emailid"
+                    style="@style/edittext_mobile_login"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:maxLength="8"
+                    android:backgroundTint="@color/white_light"
+                    android:textSize="@dimen/large_text_size">
+                    <requestFocus/>
+                </com.widget.textstyle.MyEditText_Signika_Light>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearlayout_login"
+                android:layout_marginTop="@dimen/twenty_size"
+                android:minHeight="@dimen/btn_height"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/english"
+                    style="@style/linear_horizontal_two"
+                    android:layout_marginRight="@dimen/five_all_side_padding"
+                    android:background="@drawable/btn_cmd_p">
+                    <com.widget.textstyle.MyTextView_Signika_Bold
+                        android:id="@+id/textView_english"
+                        style="@style/button"
+                        android:layout_weight="1"
+                        android:text="@string/language_english"
+                        android:textSize="@dimen/large_text_size"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/norwgian"
+                    style="@style/linear_horizontal_two"
+                    android:layout_marginLeft="@dimen/five_all_side_padding"
+                    android:background="@drawable/liner_white_border">
+                    <com.widget.textstyle.MyTextView_Signika_Bold
+                        android:id="@+id/textView_nowrgian"
+                        style="@style/button"
+                        android:layout_weight="1"
+                        android:text="@string/language_norwgian"
+                        android:textSize="@dimen/large_text_size"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/linearlayout_login"
+                          android:layout_marginTop="@dimen/twenty_size"
+                          android:background="@drawable/txt_cmd_blue"
+                          android:minHeight="@dimen/btn_height"
+                          android:orientation="horizontal">
+                <RelativeLayout
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+                    <com.widget.textstyle.MyTextView_Signika_Bold
+                        android:id="@+id/txt_next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:layout_centerInParent="true"
+                        android:text="@string/str_login"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/large_text_size"
+                        android:textStyle="bold"
+                        />
+                    <ImageView
+                        android:layout_width="@dimen/menu_img_size"
+                        android:layout_height="@dimen/menu_img_size"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/five_all_side_padding"
+                        android:layout_toRightOf="@+id/txt_next"
+                        android:src="@drawable/next_arrow"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="@dimen/thirty_top"
+                          android:orientation="horizontal"
+                          android:visibility="visible"
+                          android:layout_gravity="center"
+                          android:gravity="center">
+
+                <com.common.view.SquareImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/twenty_size"
+                    android:layout_marginLeft="@dimen/five_all_side_padding"
+                    android:maxHeight="@dimen/twenty_size"
+                    android:maxWidth="@dimen/twenty_size"
+                    android:src="@drawable/circle_white_empty"/>
+                <com.common.view.SquareImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/twenty_size"
+                    android:layout_marginLeft="@dimen/five_all_side_padding"
+                    android:maxHeight="@dimen/twenty_size"
+                    android:maxWidth="@dimen/twenty_size"
+                    android:src="@drawable/circle_white_empty"/>
+                <com.common.view.SquareImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/twenty_size"
+                    android:layout_marginLeft="@dimen/five_all_side_padding"
+                    android:maxHeight="@dimen/twenty_size"
+                    android:maxWidth="@dimen/twenty_size"
+                    android:src="@drawable/circle_white_empty"/>
+            </LinearLayout>
+            <com.widget.textstyle.MyTextView_Signika_Light
+                android:id="@+id/txt_anaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/thirty_top"
+                android:text="@string/account"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/small_text_size"
+                />
+
+            <com.widget.textstyle.MyTextView_Signika_Bold
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/register_child_button"
+                android:gravity="center"
+                android:padding="@dimen/five_all_side_padding"
+                android:textColor="@color/color_blue_p"
+                android:textSize="@dimen/large_text_size"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

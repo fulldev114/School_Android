@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    
+    <color name="color_white">#ffffff</color>
+    <color name="color_dlg_bg">#e4f6ff</color>
+    <color name="color_gray">#99ffffff</color>
+    <color name="color_blue">#0068a7</color>
+    <color name="color_blue_tran">#880068a7</color>
+
+    <color name="color_black">#000000</color>
+    <color name="color_white_tran">#44ffffff</color>
+    <color name="color_black_tran">#22000000</color>
+    <color name="color_red_tran">#22ff0000</color>
+     <!-- ParentLoginActivity -->
+    <color name="app_background_color">#00000000</color>
+    <color name="app_theam_color">#ff0000</color>
+
+    <!-- font -->
+    <color name="font_text_color">#3c434b</color>
+    <color name="font_desc_color">#7e8594</color>
+    <color name="font_blue">#5da2d9</color>
+    <color name="font_gray_blue">#284b7c</color>
+    <color name="connection_state_text_color">#ff0000</color>
+    <color name="badge_back_color">#ff0000</color>
+    <color name="passcode_number_color">#214461</color>
+
+    <!-- List Item -->
+    <color name="item_bgcolor_selected">#edf1f3</color>
+    <color name="item_bgcolor">#ffffffff</color>
+    <color name="list_item_header_bg_color">#EEEFF3</color>
+    <color name="list_item_header_text_color">#6C7288</color>
+    <color name="list_item_divider_color">#015e8c</color>
+    <color name="chat_list_time_stamp_color">#74b6e8</color>
+
+    <!-- Dialog -->
+    <color name="confirm_dlg_header_line_color">#74b6e8</color>
+    <color name="confirm_dlg_text_color">#000000</color>
+    <color name="confirm_dlg_contact_color">#509DD5</color>
+    <color name="option_item_bgcolor_selected">#323232</color>
+    <color name="option_item_bgcolor">#212121</color>
+    <color name="dlg_item_divide_color">#545454</color>
+    <color name="dlg_back_color">#212121</color>
+    <color name="dlg_trans_bg">#D8000000</color>
+
+    <!--my color-->
+    <color name="white_light">#FEFEFC</color>
+    <color name="bg_blue">#F2113B61</color>
+    <color name="white">#ffffff</color>
+    <color name="color_blue_p">#00C6FF</color>
+    <color name="color_green">#00D69C</color>
+    <color name="color_line_blue">#2A5D7F</color>
+    <color name="color_dark_blue">#002A54</color>
+    <color name="yellow">#F6BB04</color>
+    <color name="light_green">#5CFFB3</color>
+    <color name="light_blue">#00DFFF</color>
+    <color name="yellow_home">#FFBB00</color>
+    <color name="list_divider">#335A79</color>
+    <color name="dark_blue">#00264D</color>
+    <color name="neavy_blue">#002F59</color>
+    <color name="alert_blue">#024B76</color>
+    <color name="circle_chart_yellow">#FFBC00</color>
+    <color name="blue_chat_list">#00DEFF</color>
+    <color name="green_approve">#8DD032</color>
+    <color name="orange_pending">#FEBA00</color>
+    <color name="circle_chart_green">#00FBB3</color>
+    <color name="view_light_blue">#3D5E7D</color>
+    <color name="_gray">#EAEAEA</color>
+    <color name="red_reject">#FE0000</color>
+    <color name="line_gray">#DDDDDD</color>
+    <color name="light_neavy_blue">#33627C</color>
+    <color name="light_line_blue">#375877</color>
+    <color name="red">#FE0000</color>
+    <color name="color_medium_blue">#F20F3557</color>
+    <color name="header_blue">#003054</color>
+    <color name="gray_btn_send">#AAAAAA</color>
+    <color name="black_translucent">#50000000</color>
+
+    <color name="button_yellow">#fbb901</color>
+    <color name="seperator_color">#3D5F7D</color>
+    <color name="text_color_blue">#00cafb</color>
+    <color name="text_color_green">#179943</color>
+    <color name="text_color_yellow">#fbb901</color>
+
+    <!-- Material Calendar -->
+    <color name="calendar_month_text_color">@android:color/holo_blue_dark</color>
+    <color name="calendar_day_text_color">@android:color/darker_gray</color>
+    <color name="calendar_current_number_text_color">@android:color/holo_blue_dark</color>
+    <color name="calendar_number_text_color">#ff000000</color>
+    <color name="current_day_selector_color">@android:color/holo_green_light</color>
+    <color name="saved_event_selector_color">@android:color/holo_blue_bright</color>
+    <color name="saved_events_empty_color">@android:color/darker_gray</color>
+</resources>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="@dimen/ten_all_side_padding">
+
+        <com.widget.textstyle.MyTextView_Signika_Regular
+            android:id="@+id/txt_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:paddingRight="@dimen/five_all_side_padding"
+            android:text="@string/subject_name"
+            android:textColor="@color/light_neavy_blue"
+            android:textSize="@dimen/normal_text_size"/>
+
+        <LinearLayout
+            android:id="@+id/lyt_info1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="right|center_vertical"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/grid_mark1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="@dimen/five_all_side_padding"
+                android:src="@drawable/right_green"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginLeft="@dimen/five_all_side_padding"
+                android:src="@drawable/info_green"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/half_dpi"
+        android:layout_margin="@dimen/ten_all_side_padding"
+        android:background="@color/light_line_blue"/>
+
+    <!--   <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/twenty_size"
+           android:orientation="horizontal"
+           >
+
+           <com.widget.textstyle.MyTextView_Signika_Regular
+               android:id="@+id/txt_second"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_vertical"
+               android:layout_weight="1"
+               android:gravity="left|center_vertical"
+               android:paddingRight="@dimen/five_all_side_padding"
+               android:text="@string/average"
+               android:textColor="@color/_gray"
+               android:textSize="@dimen/normal_text_size"/>
+
+           <LinearLayout
+               android:id="@+id/lyt_info2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:orientation="horizontal"
+               android:gravity="right|center_vertical"
+               android:visibility="gone">
+               <ImageView
+                   android:id="@+id/grid_mark2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_vertical"
+                   android:paddingLeft="@dimen/five_all_side_padding"
+                   android:src="@drawable/right_green"/>
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_vertical|left"
+                   android:layout_marginLeft="@dimen/five_all_side_padding"
+                   android:src="@drawable/info_green"/>
+
+           </LinearLayout>
+       </LinearLayout>
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/half_dpi"
+           android:layout_marginTop="@dimen/seven_space"
+           android:background="@color/white_light"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/twenty_size"
+           android:orientation="horizontal"
+           >
+
+           <com.widget.textstyle.MyTextView_Signika_Regular
+               android:id="@+id/txt_third"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_vertical"
+               android:layout_weight="1"
+               android:gravity="left|center_vertical"
+               android:paddingRight="@dimen/five_all_side_padding"
+               android:text="@string/bad"
+               android:textColor="@color/_gray"
+               android:textSize="@dimen/normal_text_size"/>
+
+           <LinearLayout
+               android:id="@+id/lyt_info3"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:orientation="horizontal"
+               android:gravity="right|center_vertical"
+               android:visibility="gone">
+               <ImageView
+                   android:id="@+id/grid_mark3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_vertical"
+                   android:paddingLeft="@dimen/five_all_side_padding"
+                   android:src="@drawable/right_green"/>
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_vertical|left"
+                   android:layout_marginLeft="@dimen/five_all_side_padding"
+                   android:src="@drawable/info_green"/>
+
+           </LinearLayout>
+       </LinearLayout>-->
+</LinearLayout>

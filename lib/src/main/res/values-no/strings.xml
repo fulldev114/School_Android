@@ -1,0 +1,13 @@
+﻿<resources xmlns:xliff="http://schemas.android.com/tools">
+
+    <string name="app_name">CSadm</string>
+
+    <string name="pin_code_forgot_text">Glemt pin-kode?</string>
+    <string name="pin_code_step_change">Tast inn pin-kode</string>
+    <string name="pin_code_step_disable">Tast inn pin-kode</string>
+    <string name="pin_code_step_create">Tast inn pin-kode</string>
+    <string name="pin_code_step_unlock">Tast inn pin-kode</string>
+    <string name="pin_code_step_enable_confirm">Tast inn pin-kode</string>
+
+
+</resources>

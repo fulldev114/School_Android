@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/sixty_top"
+              android:orientation="horizontal"
+              android:paddingBottom="@dimen/five_all_side_padding"
+              android:paddingTop="@dimen/five_all_side_padding">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+        <!--<com.common.view.CircularImageView-->
+        <!--android:layout_width="@dimen/profile_img_size"-->
+        <!--android:layout_height="@dimen/profile_img_size"-->
+        <!--android:id="@+id/imgPropile"-->
+        <!--android:src="@drawable/cslink_avatar_unknown"-->
+        <!--android:scaleType="fitXY"/>-->
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_alignParentLeft="true"
+                      android:layout_toLeftOf="@+id/dropdown"
+                      android:orientation="horizontal">
+
+
+            <com.widget.textstyle.MyTextView_Signika_Bold
+                android:id="@+id/textView_res"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:padding="@dimen/ten_all_side_padding"
+                android:text="@string/str_select_reason"
+                android:textColor="@color/color_dark_blue"
+                android:textSize="@dimen/large_text_size"
+                />
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/dropdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/ten_all_side_padding"
+            android:src="@drawable/adres_dropdown_blue"
+            android:visibility="visible"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/fiften_space"
+              android:paddingRight="@dimen/fiften_space">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twenty_size"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lin_class_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/three_space">
+
+            <RelativeLayout
+                android:id="@+id/lytClass"
+                style="@style/linear_register"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:id="@+id/img_drop"
+                    android:layout_width="@dimen/thirty_top"
+                    android:layout_height="@dimen/thirty_top"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/five_all_side_padding"
+                    android:src="@drawable/dropdown"/>
+
+                <Spinner android:id="@+id/txtClass"
+                         style="@style/textview_message"
+                         android:background="@null"
+                         android:paddingLeft="0dp"
+                         android:popupBackground="@drawable/white_backgroud_corner_rec"
+                         android:spinnerMode="dropdown"
+                         android:textColorHint="@color/white_light"
+                    />
+                <!-- <com.widget.textstyle.MyTextView_Signika_Bold
+                     android:id="@+id/txtClass"
+                     style="@style/textview_message"
+                     android:layout_toLeftOf="@+id/img_drop"
+                     android:text="@string/select_class"/>-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lytSearch"
+                style="@style/linear_register"
+                android:layout_marginLeft="@dimen/five_all_side_padding"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:id="@+id/img_search"
+                    android:layout_width="@dimen/thirty_top"
+                    android:layout_height="@dimen/thirty_top"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/three_space"
+                    android:src="@drawable/search"/>
+
+                <com.widget.textstyle.MyEdiText_Signika_Regular
+                    android:id="@+id/txtSearch"
+                    style="@style/textview_message"
+                    android:layout_toLeftOf="@+id/img_search"
+                    android:background="@null"
+                    android:hint="@string/str_search_name"
+                    android:singleLine="true"
+                    android:textColorHint="@color/white_light"
+                    android:textSize="@dimen/eighteen_sp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/fiften_space"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ListView
+            android:id="@+id/lstStudent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:smoothScrollbar="true">
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>
+
+

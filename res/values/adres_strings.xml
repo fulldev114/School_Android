@@ -1,0 +1,255 @@
+<resources xmlns:xliff="http://schemas.android.com/tools">
+
+    <string name="str_next">Next</string>
+    <string name="msg_invalidemail">Invalid email address.</string>
+    <string name="msg_content_user_overflowed">Authentication for this email address is
+        off-loaded.\nPlease try again after 24 hours!
+    </string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_newuser_button">New member</string>
+
+    <string name="pincode_header">Change pincode</string>
+    <string name="current_pincode">Current pincode</string>
+
+    <string name="msg_not_register_email">Your email address was not registered.</string>
+
+    <string-array name="drawer_item_teacher">
+        <item>Home</item>
+        <item>My Profile</item>
+        <item>Report</item>
+        <item>Admin</item>
+        <item>Settings</item>
+        <item>Contact us</item>
+    </string-array>
+
+    <string-array name="drawer_item_report">
+       <item>Marks</item>
+        <item>Absent</item>
+        <item>Discipline &amp; Behaviour</item>
+        <!--<item>Character</item>-->
+    </string-array>
+
+    <string-array name="drawer_item_Admin">
+       <item>Marks</item>
+        <item>Discipline &amp; Behaviour</item>
+        <!--<item>Character</item>-->
+    </string-array>
+
+    <string name="msg_no_grade">Grade information is not exist.</string>
+    <string name="msg_no_class">Class information is not exist.</string>
+    <string name="msg_no_parent">Parent info not found.</string>
+    <string name="msg_no_students">Students list is not exist.</string>
+    <string name="no_update">You must save the absent data before you send an absent notice</string><!--No absent records.-->
+
+
+    <string name="str_search_name">Search Name</string>
+    <string name="msg_no_parent_atmoment">The student is not connected to any parent at the
+        moment.
+    </string>
+    <string name="str_mobile">Mobile</string>
+    <string name="str_email">*Email :</string>
+
+
+    <string name="str_desc_groupmessage">Please select a class or student to send group message.
+    </string>
+    <string name="str_message_history">History :</string>
+    <string name="msg_no_history">Group message history is not exist.</string>
+    <string name="success_send_groupmessage">Successfully sent your group message.</string>
+    <string name="str_select_history">Please select history.</string>
+    <string name="msg_no_selected_class">Please select classes.</string>
+    <string name="title_groupmessage_history">Group message history</string>
+    <string name="str_save">Save</string>
+    <string name="str_student_name">Student Name</string>
+    <string name="str_lecture_records">Lecture Records</string>
+    <string name="msg_no_change">There is no changed result.</string>
+    <string name="str_saving">Saving...</string>
+    <string name="str_sending">Sending...</string>
+    <string name="success_save">Successfully saved absent datas.</string>
+    <string name="success_send">Successfully sent absent notices.</string>
+    <string name="str_select_fullday">Select Full Day</string>
+    <string name="str_attend">Attend</string>
+    <string name="str_present">Present</string>
+    <string name="str_absent">Absent</string>
+
+    <string name="msg_not_use_pincode111">You can not use pin code 1111.Please try other number of
+        combination.
+    </string>
+    <string name="hour">Hour</string>
+    <string name="day">Day</string>
+    <string name="str_teacher_name">Teacher name</string>
+    <string name="classs">Class</string>
+    <string name="str_days_ndays">Days(Notice Days)</string>
+    <string name="str_hours_nhours">Hours(Notice Hours)</string>
+    <string name="str_last_name">Last name</string>
+    <string name="str_send_both_parent">Message to both parents</string>
+    <string name="str_send_other_contact">Message to contact person</string>
+    <string name="str_other_contact_mobile">Mobile</string>
+    <string name="str_other_contact_name">Other Contact</string>
+    <string name="str_nc_parent_mobile">Requested mobile</string>
+    <string name="str_requested_name">Requested name</string>
+    <string name="str_requested">(Requested sender)</string>
+    <string name="str_parent2_name">Parent2 name</string>
+    <string name="str_approve">Approve</string>
+    <string name="str_reject">Reject</string>
+    <string name="str_parent_mobile">Mobile</string>
+    <string name="msg_no_saved_profile_img">Failed!!!. You can not save the profile of this
+        student.
+    </string>
+    <string name="msg_bad_image">This image can not be used for profile. Please select another
+        image.
+    </string>
+    <string name="msg_no_parent1">Parent1 information is not exist.</string>
+    <string name="msg_no_parent2">Parent2 information is not exist.</string>
+    <string name="msg_blocked_parent">Parent1 or parent2 was blocked. You can not send message to
+        both parent.
+    </string>
+    <string name="msg_no_contactname">Please enter other contact name.</string>
+    <string name="msg_no_contactmobile">Please enter other contact mobile.</string>
+    <string name="msg_invalid_contactmobile">Other contact mobile is not valid.\nPlease confirm
+        again.
+    </string>
+    <string name="msg_duplicated_contact_mobile">Other contact mobile was registered already.\n
+        Please enter another mobile.
+    </string>
+    <string name="msg_success_change_studentsetting">Save successfully</string>
+    <string name="msg_success_reject">The member is rejected.</string>
+    <string name="msg_success_approve">Approved successfully.</string>
+    <string name="msg_confirm_block">Do you want to block this parent?</string>
+    <string name="msg_parent_blocked">The parent 0000 is blocked.</string>
+    <string name="msg_parent_unblocked">Parent 0000 is not blocked anymore.</string>
+    <string name="msg_checked_both_and_contact">Cannot send message to both parent and contact
+        person.
+    </string>
+    <string name="msg_checked_both">Message to both parents are on.</string>
+    <string name="msg_unchecked_both">Message to both parents are off.</string>
+    <string name="msg_checked_contact">Message to other contact is on.</string>
+    <string name="msg_unchecked_contact">Message to other contact is off.</string>
+    <string name="msg_no_linked_parent">The student is not linked to any parent.</string>
+    <string name="msg_success_reported">Successfully reported.</string>
+    <string name="send_abs_without_newline">Register Absent</string>
+    <string name="inter_msg">Internal Message</string>
+    <string name="students">Students</string>
+
+    <string name="teacher_info">Teacher Information</string>
+    <string name="email">Email</string>
+    <string name="select_class">Select Class</string>
+    <string name="msg_eror">Could not connect with server/please check your network connection
+    </string>
+    <string name="msg_no_teacher">Teacher list is not exist.</string>
+    <string name="stu_list">Student List</string>
+    <string name="select_grade">Select Grade</string>
+    <string name="approve_status">Approved</string>
+    <string name="pending_status">Request Pending</string>
+    <string name="upload_image">Upload \n Image</string>
+    <string name="student_set">Student Setting</string>
+    <string name="selectdate">Select Date</string>
+    <string name="str_absentnotice">Absent Notice</string>
+    <string name="absent_note_heading">This screen is to register or cancel an absent for a student.
+        Symbols tell about status of the absence.
+    </string>
+    <string name="reg_present">A student is present</string>
+    <string name="reg_notice">Parent send the absent notice</string>
+    <string name="reg_absent">A student marked absent by the teacher</string>
+    <string name="absent_note_bottom">Just select the number to change the status and save. To
+        cancel an absent the number and remove the mark and save. \n\n Numbers shows period number
+        and name of student.
+    </string>
+    <string name="message_history">Message History</string>
+    <string name="str_class_to">class to:</string>
+    <string name="select_student">Please select Students</string>
+    <string name="teacher_msg">Teacher Message</string>
+    <string name="str_add_mrk">Add Mark</string>
+    <string name="str_report">Marks</string>
+    <string name="str_add_chart">Add Character</string>
+
+    <string name="student_info">Student Information</string>
+    <string name="semester_yr">Semester Number</string>
+    <string name="set_mark">Set Marks</string>
+    <string name="enter_mark">Enter Mark</string>
+
+    <string name="select_sem">Select Semester</string>
+    <string name="select_sub">Select Subject</string>
+    <string name="select_char">Select Character</string>
+
+    <string name="error_sem">Please select semester</string>
+    <string name="error_mark">Please enter mark</string>
+    <string name="error_char">Please select Grade</string>
+    <string name="error_class">Please select class</string>
+    <string name="save_mark">Student\'s mark has been saved successfully.</string>
+    <string name="error_save_mark">Failed to save data. Please try again later</string>
+    <string name="subject_info">Subject Information</string>
+    <string name="save_character">Student\'s Discipline and behaviour has been saved successfully.</string><!--character-->
+
+    <string name="view_mark">View Marks</string>
+    <string name="view_char">View Character</string>
+    <string name="report">Report Cards</string>
+
+    <string name="view_absent">View Absent</string>
+    <string name="block_user">Block this user</string>
+    <string name="unblock_user">Unblock this user</string>
+    <string name="alert_gp_classes">Can\'t select individual student when classes are selected
+    </string>
+    <string name="alert_gp_single_class">Can\'t select individual student when class is selected
+    </string>
+    <string name="success_send_marks">Marks has been sent successfully</string>
+    <string name="success_send_character">Grade has been sent successfully</string>
+
+    <string name="error_image">Profile has been not uploaded.Please try again later.</string>
+    <string name="no_lecture">No lectures are scheduled for today!</string>
+    <string name="exam_no">Exam no.</string>
+    <string name="select_exam">Select Exam</string>
+    <string name="error_exam">Please select test number</string>
+    <string name="spinner_exam">Exam</string>
+    <string name="parent3">Parent3</string>
+    <string name="upload_image_save">Successfully update child photo.</string>
+
+    <string name="sent_success">Sending successfully</string>
+
+    <string name="str_tmp_phone">--------</string>
+    <string name="str_request_reject">Do you want to reject this student?</string>
+    <string name="select_rate">Select Grade</string>
+    <string name="select_class_before_reg">Please select class to register absent!</string>
+
+    <string name="err_comment">Please enter comment</string>
+    <string name="alert_emeregency"> Are you sure that you want to send emergency message to all?</string><!--Do you want to send the emergency message?-->
+
+    <string name="gp_home">Group Message</string>
+    <string name="student_classs">Class</string>
+    <string name="toast_crash">CSAdm</string>
+
+
+    <string name="not_assigned">Not Assigned</string>
+    <string name="str_done_change">Done</string>
+
+
+    <string name="add_mark_title">Marks</string>
+    <string name="report_mark_title">Marks</string>
+    <string name="send_mail">Do you want to send to eMail?</string>
+    <string name="remark">Write a remark</string>
+    <string name="select_dis_cate">Select Discipline Category</string>
+    <string name="select_remark">Select a remark</string>
+    <string name="error_discipline">Please select category</string>
+    <string name="error_remark">Please select remark</string>
+
+    <string name="headermark_title">Marks</string>
+    <string name="error_examabout">Please enter exam about</string>
+    <string name="view_discbehave">View discipline &amp; behaviour</string>
+
+    <string name="error_absent_notice">Please select class to send absent notice</string>
+    <string name="unvalidabsent">Unvalid absent</string>
+    <string name="validabsent">Valid absent</string>
+    <string name="total">Total</string>
+    <string name="days">days</string>
+    <string name="hours">hours</string>
+    <string name="title_absent_pdf">Absent Report</string>
+
+    <string name="emergency_grp_all">Send message to all</string>
+    <string name="or">OR</string>
+    <string name="select_group">Select Group</string>
+    <string name="alert_send_grp">Are you sure that you want to send emergency message to selected group(s) or member(s)?</string>
+    <string name="select_one_option">Select one option</string>
+    <string name="alert_gp_select_member">Can\'t select individual member when group is selected</string>
+
+    <string name="sfo">SFO</string>
+    <string name="adres_msg_input_name">Please enter your name.</string>
+</resources>

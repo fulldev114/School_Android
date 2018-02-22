@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.github.omadahealth.typefaceview</groupId>
+  <artifactId>typefaceview</artifactId>
+  <version>1.3.0</version>
+  <packaging>aar</packaging>
+  <name>TypefaceView Library</name>
+  <description>Text and edit text views for android which allow the user to set special typefaces</description>
+  <url>https://github.com/omadahealth/TypefaceView</url>
+  <licenses>
+    <license>
+      <name>The MIT License (MIT)</name>
+      <url>https://github.com/omadahealth/TypefaceView/blob/master/LICENSE</url>
+      <distribution>https://github.com/omadahealth/TypefaceView/blob/master/LICENSE</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>olivierg13 &amp; stoyand</id>
+      <name>Olivier Goutay &amp; Stoyan Dimitrov</name>
+    </developer>
+  </developers>
+  <scm>
+    <connection>https://github.com/omadahealth/TypefaceView.git</connection>
+    <developerConnection>https://github.com/omadahealth/TypefaceView.git</developerConnection>
+    <url>https://github.com/omadahealth/TypefaceView.git</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>com.android.support</groupId>
+      <artifactId>appcompat-v7</artifactId>
+      <version>22.0.0</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+</project>

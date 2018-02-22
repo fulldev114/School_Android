@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lst_emergency"
+        style="@style/scroll_bar"
+        android:layout_above="@+id/lin_semes"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/ten_all_side_padding"/>
+
+    <LinearLayout
+        android:id="@+id/lin_semes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/ten_all_side_padding"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/send"
+            style="@style/linearlayout_login"
+            android:background="@drawable/txt_cmd_blue"
+            android:gravity="center"
+            android:minHeight="45dp"
+            android:layout_marginTop="@dimen/ten_all_side_padding"
+            android:orientation="vertical">
+
+            <com.widget.textstyle.MyTextView_Signika_Bold
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="center"
+                android:text="@string/send_msg"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/large_text_size"
+                android:textStyle="bold"
+                />
+
+
+        </LinearLayout>
+        <com.widget.textstyle.MyTextView_Signika_Bold
+            android:id="@+id/txt_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/ten_all_side_padding"
+            android:gravity="center"
+            android:padding="@dimen/five_all_side_padding"
+            android:text="@string/cancel"
+            android:textColor="@color/light_green"
+            android:textSize="@dimen/large_text_size"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

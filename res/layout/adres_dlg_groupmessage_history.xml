@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/menu_img_size"
+    android:background="@drawable/alert_dialog_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.widget.textstyle.MyTextView_Signika_Bold
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/top_leftright_corner_header_blue"
+        android:padding="@dimen/ten_all_side_padding"
+        android:layout_gravity="center"
+        android:textColor="@color/color_white"
+        android:minHeight="@dimen/fifty_top"
+        android:text="@string/message_history"
+        android:textSize="@dimen/normal_text_size"
+         />
+
+    <com.widget.textstyle.MyTextView_Signika_Regular
+        android:id="@+id/summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/dialog_content_size"
+        android:textColor="@color/color_dark_blue"
+        android:layout_marginTop="@dimen/five_all_side_padding"
+        android:text="@string/msg_confirm_logout"
+        android:visibility="gone"
+        />
+
+
+    <ListView
+        android:id="@+id/lstHistory"
+        style="@style/scroll_bar"
+        android:layout_height="wrap_content"
+        android:divider="@color/color_dark_blue"
+        android:dividerHeight="@dimen/half_dpi"
+        />
+    <!--<ListView
+        android:id="@+id/lstHistory"
+        style="@style/scroll_bar"
+        android:layout_height="wrap_content"
+        android:choiceMode="multipleChoice"
+        android:dividerHeight="@dimen/half_dpi"
+        android:stackFromBottom="false"
+        android:divider="@color/list_item_divider_color"
+        />-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <CheckBox android:id="@+id/update_checkbox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/three_space"
+            android:layout_marginRight="@dimen/three_space"
+            android:text="Do not show again this message."
+            android:textColor="@color/color_white"
+             />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingLeft="@dimen/twenty_size"
+        android:paddingRight="@dimen/twenty_size"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten_all_side_padding"
+            android:background="@drawable/btn_cmd"
+            android:gravity="center"
+            android:padding="@dimen/ten_all_side_padding"
+            android:text="@string/str_close"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/normal_text_size"/>
+
+    </LinearLayout>
+
+</LinearLayout>

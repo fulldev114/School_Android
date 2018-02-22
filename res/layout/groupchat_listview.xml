@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:padding="@dimen/ten_all_side_padding">
+
+    <ListView
+        android:id="@+id/lstMessages"
+        style="@style/scroll_bar"
+        android:layout_above="@+id/relSendMessage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:choiceMode="multipleChoice"
+        android:divider="@null"
+        android:dividerHeight="5dp"
+        android:layout_marginTop="@dimen/ten_all_side_padding"/>
+
+    <LinearLayout
+        android:id="@+id/relSendMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/relSendMessages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

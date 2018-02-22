@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/twelve_dp"
+              android:paddingRight="@dimen/twelve_dp">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/seven_space"
+        android:orientation="horizontal"
+        >
+
+        <ListView
+            android:id="@+id/lstStudent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:smoothScrollbar="true">
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>
+
+

@@ -1,0 +1,217 @@
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <string name="str_next">Neste</string>
+    <string name="msg_invalidemail">Ugyldig epost adresse</string>
+    <string name="msg_content_user_overflowed">Antall forsøk er nådd.\nPrøv igjen om 24timer!
+    </string>
+    <string name="login_password_hint">Passord</string>
+    <string name="login_newuser_button">Nytt medlem</string>
+    <string name="pincode_header">Bytt pin-kode</string>
+    <string name="current_pincode">Nåværende pin-kode</string>
+    <string-array name="drawer_item_teacher">
+        <item>Hjem</item>
+        <item>Min profil</item>
+        <item>Rapport</item>
+        <item>Admin</item>
+        <item>Innstillinger</item>
+        <item>Kontakt oss</item>
+    </string-array>
+
+    <string-array name="drawer_item_report">
+        <item>Vurdering</item>
+        <item>Fravær</item>
+        <item>Orden og atferd</item>
+        <!--<item>Orden og Oppførsel</item>-->
+    </string-array>
+
+    <string-array name="drawer_item_Admin">
+        <item>Vurderinger</item>
+        <item>Orden og atferd</item>
+        <!--<item>Orden og Oppførsel</item>-->
+    </string-array>
+
+    <string name="msg_no_grade">Klassetrinn finnes ikke</string>
+    <string name="msg_no_class">Klasse info finnes ikke</string>
+    <string name="msg_no_parent">Foresatte info finnes ikke</string>
+    <string name="msg_no_students">Elev info er tom</string>
+    <string name="no_update">Fravær må lagres før du kan sende fraværsmelding</string><!--Fraværsmelding kan ikke sendes. Alle elever er merket som tilstede eller foresatte har meldt inn fravær.-->
+    <string name="str_search_name">Søk på navn</string>
+    <string name="msg_no_parent_atmoment">Eleven er ikke knyttet til noe foresatte, godkjenn
+        eleven.
+    </string>
+    <string name="str_mobile">Mobil</string>
+    <string name="str_email">*Epost :</string>
+    <string name="msg_input_email">Tast inn epost adresse</string>
+    <string name="msg_invalid_phone">Ugyldig mobil nummer.\nPrøv igjn.</string>
+    <string name="str_desc_groupmessage">Velg klassetrinn eller klasse for å sende en
+        gruppemelding.
+    </string>
+    <string name="str_message_history">Historikk :</string>
+    <string name="msg_no_history">Gruppemelding historikk er tom</string>
+    <string name="success_send_groupmessage">Gruppemelding sendt</string>
+    <string name="str_select_history">Velg historikk.</string>
+    <string name="msg_no_selected_class">Velg klasse.</string>
+    <string name="title_groupmessage_history">Gruppemelding historikk</string>
+    <string name="str_save">Lagre</string>
+    <string name="str_student_name">Elevnavn</string>
+    <string name="str_lecture_records">Skoletime(fravær)</string>
+    <string name="msg_no_change">Ingen fravær ble registrert.</string>
+    <string name="str_saving">Lagrer...</string>
+    <string name="str_sending">Sender...</string>
+    <string name="success_save">Fraværsdata lagret</string>
+    <string name="success_send">Fraværsmelding sendt</string>
+    <string name="str_select_fullday">Velg hele dagen</string>
+    <string name="str_attend">Tilstede</string>
+    <string name="str_present">Tilstede</string>
+    <string name="str_absent">Fravær..</string>
+    <string name="hour">Timer</string>
+    <string name="day">Dag</string>
+    <string name="str_teacher_name">Lærernavn</string>
+    <string name="classs">Klasse</string>
+    <string name="str_days_ndays">Dag(er) (Fraværende)</string>
+    <string name="str_hours_nhours">Timer (Fraværende)</string>
+    <string name="str_last_name">Etternavn</string>
+    <string name="str_send_both_parent">Meldinger til begge foresatte</string>
+    <string name="str_send_other_contact">Meldinger til foresatte 3</string>
+    <string name="str_other_contact_mobile">Foresatte3 mobil</string>
+    <string name="str_other_contact_name">Foresatte3 navn</string>
+    <string name="str_nc_parent_mobile">Forespørsel Mobil</string>
+    <string name="str_requested_name">Forespørsel Navn</string>
+    <string name="str_requested">(forespørsel sender)</string>
+    <string name="str_parent2_name">Foresatte2 navn</string>
+    <string name="str_approve">Godkjenn</string>
+    <string name="str_reject">Avvis</string>
+    <string name="str_parent_mobile">Mobil</string>
+    <string name="msg_no_saved_profile_img">Feilmelding. Kan ikke lagres profil til denne eleven.
+    </string>
+    <string name="msg_bad_image">Bilde kan ikke brukes, velg et annet bilde.</string>
+    <string name="msg_no_parent1">Foresatte1 info er ikke registrert.</string>
+    <string name="msg_no_parent2">Foresatte2 info er ikke registert.</string>
+    <string name="msg_blocked_parent">Foresatte 1 eller Foresatte 2 er blokkert, kan ikke sende
+        meldinger til begge foresatte
+    </string>
+    <string name="msg_no_contactname">Tast inn navn til foresatte 3</string>
+    <string name="msg_no_contactmobile">Tast inn mobilnummer til foresatte 3</string>
+    <string name="msg_invalid_contactmobile">Ugyldig mobilnummer til foresatte 3</string>
+    <string name="msg_duplicated_contact_mobile">Mobilnummer til foresatte 3 finnes allerede, prøv et
+        annet nummer.
+    </string>
+    <string name="msg_success_change_studentsetting">Endringer vellykket</string>
+    <string name="msg_success_reject">Avvisning vellykket.</string>
+    <string name="msg_success_approve">Godkjenning vellykket.</string>
+    <string name="msg_confirm_block">Ønsker du å blokkere foresatte?</string>
+    <string name="msg_parent_blocked">Foresatte 0000 er blokkert.</string>
+    <string name="msg_parent_unblocked">Foresatte 0000 er ikke blokkert lenger.</string>
+    <string name="msg_checked_both_and_contact">Melding kan ikke sende til begge foresatte og
+        foresatte 3
+    </string>
+    <string name="msg_checked_both">Aktivert melding til begge foresatte</string>
+    <string name="msg_unchecked_both">Deaktivert melding til begge foresatte</string>
+    <string name="msg_checked_contact">Aktivert melding til foresatte 3</string>
+    <string name="msg_unchecked_contact">Deaktivert melding til foresatte 3</string>
+    <string name="msg_no_linked_parent">Eleven er ikke knyttet til noe foresatte</string>
+    <string name="msg_success_reported">Rappotering vellykket</string>
+    <string name="send_abs_without_newline">Registrer fravær</string>
+    <string name="inter_msg">Internmelding</string>
+    <string name="students">Elever</string>
+    <string name="teacher_info">Oversikt lærere</string>
+    <string name="email">Epost</string>
+    <string name="select_class">Velg klasse</string>
+    <string name="msg_eror">Kunne ikke koble til server, sjekk nettverksforbindelse.</string>
+    <string name="msg_no_teacher">Lærer listen er ikke eksisterer.</string>
+    <string name="stu_list">Elever</string>
+    <string name="select_grade">Velg klassetrinn</string>
+    <string name="approve_status">Godkjent</string>
+    <string name="pending_status">Forespørsel venter..</string>
+    <string name="upload_image">Lastopp bilde</string>
+    <string name="student_set">Elev profil</string>
+    <string name="selectdate">Velg dato</string>
+    <string name="str_absentnotice">Fraværsmelding</string>
+    <string name="absent_note_heading">For å endre, registrere eller kansellere et fravær, trykk på tallene foran eleven. Husk alltid å lagre endringene.
+    </string><!--Register eller kanseller et fravaer på denne skjemen. Send
+        fravaersmelding til foreldre som ikke har meldt inn fravaeret eller sagt ifra til skolen.-->
+    <string name="reg_present">Grønn status betyr at eleven er tilstede.</string>
+    <string name="reg_notice">Gul status betyr at de foresatte har meldt inn fraværet.</string>
+    <string name="reg_absent">Rød status betyr at foresatte ikke har meldt inn fraværet.</string>
+    <string name="absent_note_bottom">Hvis rød status vises for eleven, vil en fraværsmelding bli sendt til elevens foresatte. Det kan være enkelttimer eller hele dager.
+        \n\nSend fraværsmelding til foreldre som ikke har meldt inn fraværet eller sagt ifra til skolen.
+    </string><!--Registrer eller kanseller fravær på denne skjermen-->
+    <string name="message_history">Meldingshistorikk</string>
+    <string name="str_class_to">klasse til :</string>
+    <string name="select_student">Vennligst velg Studenter</string>
+    <string name="teacher_msg">Oversikt lærere</string>
+    <string name="str_add_mrk">Legg til vurdering</string>
+    <string name="str_report">Vurderinger</string>
+    <string name="str_add_chart">Orden og atferd</string><!--Orden og Oppførsel-->
+    <string name="student_info">Elev info</string>
+    <string name="semester_yr">Semester nummer</string>
+    <string name="set_mark"> Legg til vurderinger</string><!--Legg til Karakter-->
+    <string name="enter_mark">Karakter</string><!--Tast inn vurdering-->
+    <string name="select_sem">Velg semester</string>
+    <string name="select_sub">Velg fag</string>
+    <string name="select_char">Velg karakter</string>
+    <string name="error_sem">Velg semester</string>
+    <string name="error_mark">Tast inn karakter</string>
+    <string name="error_char">Velg klassetrinn</string>
+    <string name="error_class">Velg klasse</string>
+    <string name="save_mark">Vurdering lagret</string>
+    <string name="error_save_mark">Data lagring mislykkes, prøv igjen senere</string>
+    <string name="subject_info">Fag informasjon</string>
+    <string name="save_character">Info lagret</string>
+    <string name="view_mark">Se vurderinger</string>
+    <string name="view_char">Se vurderingsrapport</string>
+    <string name="report">Rapportere Kort</string>
+    <string name="view_absent">Se fravær</string>
+    <string name="block_user">Blokker medlem</string>
+    <string name="unblock_user">Fjern blokkering</string>
+    <string name="alert_gp_classes">Kan ikke velge enkel elev når hele klassen er valgt</string>
+    <string name="alert_gp_single_class">Kan ikke velge enkel elev når hele klassen er valgt</string>
+    <string name="success_send_marks">Karakter rapport sendt til Epost</string>
+    <string name="success_send_character">Orden og Oppførsel rapport sendt til Epost</string>
+    <string name="error_image">Profil oppdatering mislykkes, prøv igjen senere.</string>
+    <string name="no_lecture">Finnes ikke skoletime for valgt dato</string>
+    <string name="exam_no">Eksamen nei.</string>
+    <string name="select_exam">Velg eksamen</string>
+    <string name="error_exam">Velg vurdering</string><!--eksamen-->
+    <string name="spinner_exam">Eksamen</string>
+    <string name="parent3">Foresatte 3</string>
+    <string name="upload_image_save">Bildet oppdatert</string>
+    <string name="sent_success">Sending vellykket</string>
+    <string name="str_tmp_phone">--------</string>
+    <string name="str_request_reject">Ønsker du å avvise denne eleven?</string>
+    <string name="select_rate">Velg vurdering</string>
+    <string name="select_class_before_reg">Velg klasse for å registrere fraværet</string>
+    <string name="err_comment">Skriv kommentar før du kan lagre dataene</string>
+    <string name="alert_emeregency">Er du sikker på at du ønsker å sende nødmelding til alle?</string><!--Er du sikker på at du vil sende nødmelding til alle lærere og foresatte?-->
+    <string name="gp_home">Gruppe-\nmelding</string>
+    <string name="student_classs">Klassenavn</string>
+    <string name="not_assigned">Ikke registrert</string>
+    <string name="str_done_change">Utført</string>
+    <string name="toast_crash">CSAdm</string>
+    <string name="add_mark_title">Vurderinger</string>
+    <string name="report_mark_title">Vurderingsrapport</string>
+    <string name="send_mail">Ønsker du å sende til din epost?</string>
+    <string name="remark">Skriv kommentar</string>
+    <string name="select_dis_cate">Velg Orden eller Atferd</string><!--Atferd eller Orden-->
+    <string name="select_remark">Velg anmerkning</string>
+    <string name="error_discipline">Velg Orden eller Atferd</string>
+    <string name="error_remark">Velg anmerkning</string>
+    <string name="headermark_title">Vurderingsrapport</string>
+    <string name="error_examabout">Tast inn emne</string>
+    <string name="view_discbehave">Se orden og atferd</string>
+    <string name="unvalidabsent">Ugyldig fravær</string>
+    <string name="validabsent">Gyldig fravær</string>
+    <string name="total">Total antall</string>
+    <string name="days">Dager</string>
+    <string name="hours">Timer</string>
+
+    <string name="title_absent_pdf">Fraværsmelding</string>
+    <string name="emergency_grp_all">Send message to all.</string>
+    <string name="or">ELLER</string>
+    <string name="select_group">Velg gruppe</string>
+    <string name="alert_send_grp">Er du sikker på at du vil sende nødmelding til valgte gruppen (e) eller medlem (er)?</string>
+    <string name="select_one_option">Velg ett alternativ</string>
+    <string name="alert_gp_select_member">Can\'t select individual member when group is selected</string>
+
+    <string name="sfo">SFO</string>
+    <string name="adres_msg_input_name">Please enter your name.</string>
+</resources>

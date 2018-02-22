@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rd_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/radio_white_green"
+            android:padding="@dimen/five_all_side_padding"/>
+
+        <ImageView
+            android:id="@+id/img_emrgency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/five_all_side_padding"
+            android:src="@drawable/alert"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="@dimen/seven_space"
+                      android:orientation="vertical">
+            <com.widget.textstyle.MyTextView_Signika_Regular
+                android:id="@+id/txt_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dark_blue_background"
+                android:padding="@dimen/seven_space"
+                android:textColor="@color/white_light"
+                android:textSize="@dimen/small_text_size"
+                />
+            <com.widget.textstyle.MyTextView_Signika_Regular
+                android:id="@+id/txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/three_space"
+                android:paddingLeft="@dimen/seven_space"
+                android:textColor="@color/color_blue_p"
+                android:textSize="@dimen/small_text_size"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/view_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/half_dpi"
+        android:layout_marginBottom="@dimen/five_all_side_padding"
+        android:layout_marginTop="@dimen/five_all_side_padding"
+        android:background="@color/light_line_blue"
+        android:visibility="gone"/>
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/background"
+              android:orientation="vertical">
+
+
+    <ScrollView
+        style="@style/scroll_bar"
+        android:layout_marginBottom="@dimen/ten_all_side_padding">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+
+            <com.widget.textstyle.MyTextView_Signika_Regular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="@dimen/fifty_top"
+                android:text=""
+                android:textColor="@color/font_text_color"
+                android:textSize="@dimen/normal_text_size"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                style="@style/ImageAppLogog"
+                android:layout_marginTop="@dimen/thirty_top"
+                android:padding="0dp"
+                android:src="@drawable/logo_cslink"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    style="@style/linearlayout_login"
+                    android:layout_marginTop="@dimen/twenty_size"
+                    android:background="@drawable/liner_white_border_rect"
+                    android:minHeight="@dimen/btn_height"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="@dimen/seven_space"
+                        android:src="@drawable/email"/>
+
+                    <com.widget.textstyle.MyEditText_Signika_Light
+                        android:id="@+id/editEmail"
+                        style="@style/edittext_mobile_login"
+                        android:background="@null"
+                        android:hint="@string/str_email_address"
+                        android:inputType="textEmailAddress"
+                        android:textSize="@dimen/large_text_size">
+                        <requestFocus/>
+                    </com.widget.textstyle.MyEditText_Signika_Light>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/linearlayout_login"
+                    android:layout_marginTop="@dimen/fiften_space"
+                    android:background="@drawable/liner_white_border_rect"
+                    android:minHeight="@dimen/btn_height"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|left"
+                        android:padding="@dimen/seven_space"
+                        android:src="@drawable/message_fb"/>
+
+                    <com.widget.textstyle.MyEditText_Signika_Light
+                        android:id="@+id/editText1"
+                        style="@style/edittext_mobile_login"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="top|left"
+                        android:hint="@string/feedback_msg"
+                        android:singleLine="false"
+                        android:lines="7"
+                        android:textSize="@dimen/large_text_size">
+                        <requestFocus/>
+                    </com.widget.textstyle.MyEditText_Signika_Light>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/send"
+                style="@style/linearlayout_login"
+                android:layout_marginTop="@dimen/twenty_size"
+                android:background="@drawable/btn_cmdn"
+                android:minHeight="@dimen/btn_height"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+                    <com.widget.textstyle.MyTextView_Signika_Bold
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:text="@string/send"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/large_text_size"
+                        android:textStyle="bold"
+                        />
+                    <ImageView
+                        android:layout_width="@dimen/menu_img_size"
+                        android:layout_height="@dimen/menu_img_size"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/five_all_side_padding"
+                        android:layout_toRightOf="@+id/textView3"
+                        android:src="@drawable/send"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

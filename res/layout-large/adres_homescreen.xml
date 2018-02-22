@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/background"
+              android:orientation="vertical"
+              android:weightSum="1">
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadingEdge="none"
+                android:fillViewport="true"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+        <LinearLayout
+            style="@style/linear_home"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/lin_msg"
+                style="@style/home"
+                android:background="@drawable/blue_backgroud_border"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/message"/>
+
+                    <LinearLayout
+                        android:id="@+id/inc_msg_bg"
+                        style="@style/linbadge"
+                        android:layout_alignRight="@+id/img_msg"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        >
+                        <com.widget.textstyle.MyTextView_Signika_Regular
+                            android:id="@+id/txtBadge"
+                            style="@style/badge"
+                            />
+                    </LinearLayout>
+                </RelativeLayout>
+                <com.widget.textstyle.MyTextView_Signika_Bold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/str_message"
+                    android:textColor="@color/color_blue_p"
+                    android:textSize="@dimen/micro_text_size"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lin_gp"
+                style="@style/home"
+                android:layout_marginTop="@dimen/seventy_size"
+                android:background="@drawable/green_backgroud_border"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_gp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/adres_group_message_1"/>
+
+                    <include
+                        layout="@layout/badgeactivity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/img_gp"/>
+                </RelativeLayout>
+                <com.widget.textstyle.MyTextView_Signika_Bold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/gp_home"
+                    android:textColor="@color/light_green"
+                    android:textSize="@dimen/micro_text_size"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_abs"
+                style="@style/home"
+                android:layout_marginTop="@dimen/seventy_size"
+                android:background="@drawable/yellow_backgroud_border"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_abs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/send_absent"/>
+
+                    <LinearLayout
+                        android:id="@+id/linc_reg_bg"
+                        style="@style/linbadge"
+                        android:layout_alignRight="@+id/img_abs"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        >
+                        <com.widget.textstyle.MyTextView_Signika_Regular
+                            android:id="@+id/txtBadgereg"
+                            style="@style/badge"
+                            />
+                    </LinearLayout>
+
+                    <!-- <include
+                         layout="@layout/badgeactivity"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_alignRight="@+id/img_abs"/>-->
+                </RelativeLayout>
+                <com.widget.textstyle.MyTextView_Signika_Bold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/one_dp"
+                    android:gravity="center"
+                    android:text="@string/send_abs"
+                    android:textColor="@color/yellow_home"
+                    android:textSize="@dimen/micro_text_size"/>
+
+            </LinearLayout>
+
+            <RelativeLayout android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/thirty_top"
+                            android:orientation="horizontal">
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_centerHorizontal="true"
+                              android:gravity="center"
+                              android:orientation="horizontal">
+
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:id="@+id/rel_int_msg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/twenty_size"
+                            android:gravity="right">
+
+                            <ImageView
+                                android:id="@+id/img_message"
+                                android:layout_width="@dimen/fifty_five"
+                                android:layout_height="@dimen/fifty_five"
+                                android:background="@drawable/adres_circle_white_strok"
+                                />
+                            <ImageView android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:layout_centerHorizontal="true"
+                                       android:layout_centerVertical="true"
+                                       android:src="@drawable/email"/>
+                            <LinearLayout
+                                android:id="@+id/linbadge_inter"
+                                style="@style/linbadge"
+                                android:layout_alignRight="@+id/img_message"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+                                <com.widget.textstyle.MyTextView_Signika_Regular
+                                    android:id="@+id/txtBadge_inter"
+                                    style="@style/badge"
+                                    />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <com.widget.textstyle.MyTextView_Signika_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/rel_int_msg"
+                            android:text="@string/inter_msg"
+                            android:textColor="@color/white_light"
+                            android:textSize="@dimen/thirteen_sp"/>
+                    </RelativeLayout>
+
+
+                    <View
+                        android:id="@+id/line"
+                        android:layout_width="@dimen/one_dp"
+                        android:layout_height="@dimen/fifty_top"
+                        android:layout_marginLeft="@dimen/ten_all_side_padding"
+                        android:layout_marginRight="@dimen/ten_all_side_padding"
+                        android:background="@color/white_light"/>
+
+                    <RelativeLayout
+                        android:id="@+id/rel_student_setting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/twenty_size"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:id="@+id/rel_student"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:id="@+id/rel_img"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:id="@+id/img_students"
+                                    android:layout_width="@dimen/fifty_five"
+                                    android:layout_height="@dimen/fifty_five"
+                                    android:background="@drawable/adres_circle_white_strok"
+                                    />
+                                <ImageView android:layout_width="wrap_content"
+                                           android:layout_height="wrap_content"
+                                           android:layout_centerHorizontal="true"
+                                           android:layout_centerVertical="true"
+                                           android:src="@drawable/adres_students"/>
+                            </RelativeLayout>
+                            <com.widget.textstyle.MyTextView_Signika_Bold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/rel_img"
+                                android:layout_centerHorizontal="true"
+                                android:text="@string/students"
+                                android:textColor="@color/white_light"
+                                android:textSize="@dimen/thirteen_sp"/>
+                        </RelativeLayout>
+
+                        <com.widget.textstyle.MyTextView_Signika_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rel_student"
+                            android:text="@string/students"
+                            android:textColor="@color/white_light"
+                            android:textSize="@dimen/thirteen_sp"
+                            android:visibility="gone"/>
+                        <LinearLayout
+                            android:id="@+id/lin_badgestudent"
+                            style="@style/linbadge"
+                            android:layout_alignRight="@+id/rel_student"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+                            <com.widget.textstyle.MyTextView_Signika_Regular
+                                android:id="@+id/txtBadge_students"
+                                style="@style/badge"
+                                />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

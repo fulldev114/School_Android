@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/background"
+              android:orientation="vertical">
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadingEdge="none"
+                android:fillViewport="true"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+
+            <ImageView
+                style="@style/ImageAppLogog"
+                android:src="@drawable/logo_cslink"/>
+
+            <LinearLayout
+                style="@style/linearlayout_login"
+                android:minHeight="45dp"
+                android:orientation="horizontal">
+                <ImageView android:layout_width="@dimen/profile_img_size"
+                           android:layout_height="@dimen/profile_img_size"
+                           android:layout_gravity="center"
+                           android:padding="@dimen/ten_all_side_padding"
+                           android:src="@drawable/mobile"/>
+                <com.widget.textstyle.MyTextView_Signika_Light
+                    style="@style/textview_mobile_login"
+                    android:text="@string/number"
+                    android:textSize="@dimen/large_text_size"/>
+
+                <com.widget.textstyle.MyTextView_Signika_Light
+                    android:id="@+id/txtPhone"
+                    style="@style/edittext_mobile_login"
+                    android:background="@null"
+                    android:textSize="@dimen/large_text_size">
+                    <requestFocus/>
+                </com.widget.textstyle.MyTextView_Signika_Light>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearlayout_verify"
+                android:background="@drawable/liner_white_border"
+                android:minHeight="@dimen/btn_height"
+                android:orientation="horizontal">
+
+
+                <com.widget.textstyle.MyEditText_Signika_Light
+                    android:id="@+id/txtVerifyCode"
+                    style="@style/edittext_mobile_login"
+                    android:background="@null"
+                    android:hint="@string/str_verificaton_code"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:padding="@dimen/seven_space"
+                    android:textSize="@dimen/large_text_size">
+                    <requestFocus/>
+                </com.widget.textstyle.MyEditText_Signika_Light>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_next"
+                style="@style/linearlayout_login"
+                android:layout_marginTop="@dimen/twenty_size"
+                android:background="@drawable/txt_cmd_blue"
+                android:minHeight="@dimen/btn_height"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+                    <com.widget.textstyle.MyTextView_Signika_Bold
+                        android:id="@+id/btnNext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:text="@string/str_login"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/large_text_size"
+                        android:textStyle="bold"
+                        />
+                    <ImageView
+                        android:layout_width="@dimen/menu_img_size"
+                        android:layout_height="@dimen/menu_img_size"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/five_all_side_padding"
+                        android:layout_toRightOf="@+id/btnNext"
+                        android:src="@drawable/next_arrow"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:layout_marginTop="@dimen/thirty_top"
+                          android:gravity="center"
+                          android:orientation="horizontal"
+                          android:visibility="visible">
+
+                <com.common.view.SquareImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/twenty_size"
+                    android:layout_marginLeft="@dimen/five_all_side_padding"
+                    android:maxHeight="@dimen/twenty_size"
+                    android:maxWidth="@dimen/twenty_size"
+                    android:src="@drawable/circle_blue_full"/>
+                <com.common.view.SquareImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/twenty_size"
+                    android:layout_marginLeft="@dimen/five_all_side_padding"
+                    android:maxHeight="@dimen/twenty_size"
+                    android:maxWidth="@dimen/twenty_size"
+                    android:src="@drawable/circle_white_empty"/>
+                <com.common.view.SquareImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/twenty_size"
+                    android:layout_marginLeft="@dimen/five_all_side_padding"
+                    android:maxHeight="@dimen/twenty_size"
+                    android:maxWidth="@dimen/twenty_size"
+                    android:src="@drawable/circle_white_empty"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

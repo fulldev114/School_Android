@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_blue"
+    >
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/seven_space">
+        <ImageView android:layout_width="@dimen/seventy_top"
+                   android:layout_height="@dimen/seventy_top"
+                   android:layout_centerHorizontal="true"
+                   android:src="@drawable/adres_circle_white_strok"
+                   android:padding="@dimen/five_all_side_padding"
+            />
+    </RelativeLayout>
+</RelativeLayout>

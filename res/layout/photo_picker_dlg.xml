@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/rootView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/alert_dialog_bg"
+              android:gravity="center_vertical"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/two_dp"
+              android:layout_marginLeft="@dimen/ten_all_side_padding"
+              android:layout_marginRight="@dimen/ten_all_side_padding"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/thirty_top"
+        android:paddingTop="@dimen/fiften_space"
+        android:paddingBottom="@dimen/fiften_space"
+        >
+
+
+        <com.widget.textstyle.MyTextView_Signika_Semibold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/add_photo"
+            android:textColor="@color/color_blue_p"
+            android:textSize="@dimen/dialog_title_size"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/confirm_dlg_header_line_height"
+        android:background="@color/confirm_dlg_header_line_color" />
+
+    <RelativeLayout
+        android:id="@+id/lyt_album"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/menu_img_size"
+        android:paddingLeft="@dimen/five_all_side_padding"
+        android:paddingTop="@dimen/fiften_space"
+        android:paddingBottom="@dimen/fiften_space"
+        android:layout_marginTop="@dimen/two_dp"
+        >
+
+        <com.widget.textstyle.MyTextView_Signika_Regular
+            android:id="@+id/txt_mn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/photo_album"
+            android:textColor="@color/color_blue_p"
+            android:textSize="@dimen/dialog_content_size" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/half_dpi"
+        android:layout_marginLeft="@dimen/menu_img_size"
+        android:background="@color/view_light_blue" />
+
+    <RelativeLayout
+        android:id="@+id/lyt_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/menu_img_size"
+        android:paddingLeft="@dimen/five_all_side_padding"
+        android:paddingTop="@dimen/fiften_space"
+        android:paddingBottom="@dimen/fiften_space"
+        >
+
+        <com.widget.textstyle.MyTextView_Signika_Regular
+            android:id="@+id/txt_kp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/camera"
+            android:textColor="@color/color_blue_p"
+            android:textSize="@dimen/dialog_content_size" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/half_dpi"
+        android:layout_marginLeft="@dimen/menu_img_size"
+        android:background="@color/view_light_blue" />
+
+    <RelativeLayout
+        android:id="@+id/lyt_remove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/menu_img_size"
+        android:paddingLeft="@dimen/five_all_side_padding"
+        android:paddingTop="@dimen/fiften_space"
+        android:paddingBottom="@dimen/fiften_space"
+        >
+
+        <com.widget.textstyle.MyTextView_Signika_Regular
+            android:id="@+id/txt_remove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/myprofile_photo_sel_remove_text"
+            android:textColor="@color/color_blue_p"
+            android:textSize="@dimen/dialog_content_size" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/half_dpi"
+        android:layout_marginLeft="@dimen/menu_img_size"
+        android:background="@color/view_light_blue" />
+
+    <RelativeLayout
+        android:id="@+id/lyt_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/menu_img_size"
+        android:paddingLeft="@dimen/five_all_side_padding"
+        android:paddingTop="@dimen/fiften_space"
+        android:paddingBottom="@dimen/fiften_space"
+        >
+
+        <com.widget.textstyle.MyTextView_Signika_Regular
+            android:id="@+id/txt_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_blue_p"
+            android:textSize="@dimen/dialog_content_size"
+            android:text="@string/cancel"
+             />
+
+    </RelativeLayout>
+
+</LinearLayout>

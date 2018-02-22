@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background"
+    tools:context="com.cloudstream.cslink.StartActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/cslink_logo_image"
+        android:src="@drawable/logo_cslink"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_start_teacher"
+        style="@style/linearlayout_login"
+        android:background="@drawable/txt_cmd_blue"
+        android:minHeight="@dimen/btn_height"
+        android:layout_below="@+id/cslink_logo_image"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_start_teacher"
+            android:layout_width="@dimen/menu_img_size"
+            android:layout_height="@dimen/menu_img_size"
+            android:layout_centerInParent="true"
+            android:src="@drawable/class_incharge"/>
+
+        <com.widget.textstyle.MyTextView_Signika_Bold
+            android:id="@+id/txt_start_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="@string/start_are_you_a_teacher"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/large_text_size"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/image_start_teacher"
+            android:textStyle="bold"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_start_parent"
+        style="@style/linearlayout_login"
+        android:background="@drawable/liner_white_border"
+        android:minHeight="@dimen/btn_height"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/linearlayout_start_teacher"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_start_parent"
+            android:layout_width="@dimen/menu_img_size"
+            android:layout_height="@dimen/menu_img_size"
+            android:layout_centerInParent="true"
+            android:src="@drawable/my_profile_blue"/>
+
+        <com.widget.textstyle.MyTextView_Signika_Bold
+            android:id="@+id/txt_start_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="@string/start_are_you_a_parent"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/large_text_size"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/image_start_parent"
+            android:textStyle="bold"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+</RelativeLayout>

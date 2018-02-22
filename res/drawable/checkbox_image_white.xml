@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/check_green" android:state_checked="true"
+          android:state_focused="true"
+        />
+    <!-- <item android:state_checked="false" android:state_focused="true"
+           android:drawable="@drawable/check" />-->
+    <item android:drawable="@drawable/unchecked_white"
+          android:state_checked="false"/>
+    <item android:drawable="@drawable/check_green"
+          android:state_checked="true"/>
+
+</selector>

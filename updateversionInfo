@@ -1,0 +1,75 @@
+Version code=9
+Version Name=1.7
+Upload Date=08-03-2017
+
+Update:
+1)group message time convert into localization
+2)message - change design of copy button, set default Paste functionality. set copy text to clipboard
+
+=====================================================
+
+Version code=8
+Version Name=1.6
+Upload Date=27-02-2017
+
+Update:
+Push notificaiton in some device, contactus email is not receive in inbox
+
+=====================================================
+Version code=7
+Version Name=1.5
+Upload Date=07-02-2017
+
+Update: Publish in Alpha testing
+Layout design
+
+=====================================================
+Version code=6
+Version Name=1.5
+Upload Date=11-01-2017
+
+Update:
+Min date selection issue in Register absent  and Absent Statistics, change code Dt: 10-01-2017
+
+=====================================================
+Version code=5
+Version Name=1.4
+Upload Date=04-01-2017
+
+Update:
+Receive chat notification again when resume app solved , chat badge counter on student name
+     , sometimes get offline message even student is online so keep condition in GCMIntenetService.java, generate Markpdf from server
+
+=====================================================
+Version code=4
+Version Name=1.3
+Upload Date=12-12-2016
+
+Update:
+change notification icon in GCMINTENTSERVICE.java file
+
+=====================================================
+Version code=3
+Version Name=1.2
+Upload Date=02-12-2016
+
+Update:
+Message Badge issue solved, copy- paste translation change
+
+=====================================================
+Version code=2
+Version Name=1.1
+Upload Date=08-11-2016
+
+Update:
+with Mark and dicipline-behaviour module and update version bug solved
+
+=====================================================
+Version code=1
+Version Name=1.0
+Upload Date=05-10-2016
+
+Update:
+without mark and character
+
+=====================================================

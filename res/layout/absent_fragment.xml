@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background"
+                android:orientation="vertical"
+                android:padding="@dimen/fiften_space">
+
+    <ScrollView
+        style="@style/scroll_bar"
+        android:layout_above="@+id/send"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+            <LinearLayout
+                style="@style/linearlayout_login"
+                android:layout_margin="@dimen/five_all_side_padding"
+                android:background="@drawable/white_border_rect"
+                android:minHeight="@dimen/btn_height"
+                android:orientation="horizontal">
+                <com.widget.textstyle.MyTextView_Signika_Regular
+                    android:id="@+id/txtCurDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/five_all_side_padding"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_current_date_value"
+                    android:textColor="@color/white_light"
+                    android:textSize="@dimen/normal_text_size"
+                    />
+                <ImageView
+                    android:id="@+id/img_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.7"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/five_all_side_padding"
+                    android:src="@drawable/calendar_absent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearlayout_login"
+                android:layout_marginLeft="@dimen/five_all_side_padding"
+                android:layout_marginRight="@dimen/five_all_side_padding"
+                android:layout_marginTop="@dimen/fiften_space"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/all_subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/checkBox1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:button="@drawable/checkbox_image_white"
+                        android:enabled="false"
+                        android:padding="@dimen/five_all_side_padding"
+                        android:text=""
+                        />
+                    <com.widget.textstyle.MyTextView_Signika_Regular
+                        android:id="@+id/textView_all_subject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_toRightOf="@+id/checkBox1"
+                        android:text="@string/full_day"
+                        android:textColor="@color/white_light"
+                        android:textSize="@dimen/normal_text_size"
+                        android:visibility="visible"/>
+               </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/select_subject"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/liner_white_border"
+                        android:gravity="center"
+                        android:minHeight="@dimen/thirty_top"
+                        >
+
+                        <com.widget.textstyle.MyTextView_Signika_Regular
+                            android:id="@+id/textView_select_subject"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/select_subject"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/micro_text_size"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/five_all_side_padding"
+                android:layout_marginRight="@dimen/five_all_side_padding"
+                android:layout_marginTop="@dimen/twenty_size"
+                android:background="@drawable/white_border_rect"
+                android:orientation="vertical">
+
+                <com.widget.textstyle.MyTextView_Signika_Regular
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:padding="@dimen/ten_all_side_padding"
+                    android:text="@string/str_period"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/normal_text_size"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/one_half_border_dim"
+                    android:background="@color/white_light"/>
+
+                <ListView
+                    android:id="@+id/listView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/white_light"
+                    android:dividerHeight="@dimen/one_half_border_dim"
+                    android:fadingEdge="none"
+                    android:overScrollMode="never"
+                    android:scrollbars="none"
+                    android:visibility="visible">
+                </ListView>
+
+            </LinearLayout>
+
+            <!-- kkjvkjv -->
+
+            <RelativeLayout
+                android:id="@+id/rel_auto_srch"
+                style="@style/linear_register"
+                android:layout_marginLeft="@dimen/five_all_side_padding"
+                android:layout_marginRight="@dimen/five_all_side_padding"
+                android:layout_marginTop="@dimen/fiften_space"
+                android:background="@drawable/white_border_rect"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/ten_all_side_padding"
+                    android:focusable="false"
+                    android:src="@drawable/dropdown"/>
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    style="@style/textview"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:dropDownWidth="match_parent"
+                    android:gravity="center_vertical|left"
+                    android:minHeight="@dimen/btn_height"
+                    android:paddingLeft="0dp"
+                    android:popupBackground="@color/white_light"
+                    android:spinnerMode="dropdown"
+                    android:textColorHint="@color/white_light"
+                    />
+            </RelativeLayout>
+
+
+            <!-- kkjvkjv -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.09"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/send"
+        style="@style/linearlayout_login"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_cmdn"
+        android:minHeight="@dimen/btn_height"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <com.widget.textstyle.MyTextView_Signika_Bold
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:text="@string/send"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/large_text_size"
+                android:textStyle="bold"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/five_all_side_padding"
+                android:layout_toRightOf="@+id/textView22"
+                android:src="@drawable/send"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

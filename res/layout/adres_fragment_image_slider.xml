@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff000000">
+
+    <ImageButton
+        android:id="@+id/lbl_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/ten_all_side_padding"
+        android:background="@color/black_translucent"
+        android:src="@drawable/ic_slider_close" />
+
+    <com.widget.textstyle.MyButton_Signika_Regular
+        android:id="@+id/lbl_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/twenty_size"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/small_text_size"
+        android:textStyle="bold" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lbl_close"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/five_all_side_padding"
+        android:orientation="vertical"
+        >
+
+        <com.widget.textstyle.MyTextView_Signika_Regular
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/small_text_size"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:visibility="gone"/>
+
+        <com.widget.textstyle.MyTextView_Signika_Regular
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="@android:color/white"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

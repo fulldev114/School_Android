@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/incl"
+        layout="@layout/header_activity"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/seperator_color"/>
+    <RelativeLayout
+        android:id="@+id/rel_search"
+        style="@style/linear_register"
+        android:layout_margin="@dimen/ten_all_side_padding">
+        <ImageView
+            android:id="@+id/img_search"
+            style="@style/rel_item"
+            android:layout_width="@dimen/thirty_top"
+            android:layout_height="@dimen/thirty_top"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/five_all_side_padding"
+            android:src="@drawable/search_white"/>
+
+        <com.widget.textstyle.MyEdiText_Signika_Regular
+            android:id="@+id/edt_srch"
+            style="@style/textview"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/img_search"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="@string/search"
+            android:imeOptions="actionSearch"
+            android:padding="@dimen/three_space"
+            android:singleLine="true"
+            android:textSize="@dimen/normal_text_size"
+            android:textColorHint="@color/white_light"/>
+    </RelativeLayout>
+
+    <com.widget.textstyle.MyTextView_Signika_Regular
+        android:id="@+id/txt_note"
+        style="@style/textview"
+        android:gravity="center"
+        android:hint="@string/search"
+        android:text="@string/no_student_msg"
+        android:textColor="@color/light_green"
+        android:textSize="@dimen/small_text_size"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/rel_auto_srch"
+        style="@style/linear_register"
+        android:layout_margin="@dimen/ten_all_side_padding"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:focusable="false"
+            android:src="@drawable/dropdown"/>
+
+        <Spinner
+            android:id="@+id/auto_grad"
+            style="@style/textview"
+            android:layout_centerInParent="true"
+            android:background="@drawable/liner_white_border_rect"
+            android:gravity="center_vertical|left"
+            android:hint="@string/search_class_grad"
+            android:padding="@dimen/three_space"
+            android:popupBackground="@drawable/white_backgroud_corner_less"
+            android:spinnerMode="dropdown"
+            android:textColorHint="@color/white_light"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+         android:background="@color/seperator_color"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/lstActivities"
+            style="@style/scroll_bar"
+            android:choiceMode="singleChoice"
+            android:divider="@null"
+            android:visibility="visible"/>
+    </RelativeLayout>
+</LinearLayout>

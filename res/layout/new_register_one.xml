@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/register_one"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/five_all_side_padding">
+
+            <ImageView
+                style="@style/ImageAppLogog"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/logo_cslink"/>
+            <LinearLayout
+                style="@style/linearlayout_login"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.widget.textstyle.MyTextView_Signika_Semibold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profile_hint_parent1"
+                        android:textColor="@color/color_blue_p"
+                        android:textSize="@dimen/normal_text_size"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/one_half_dpi"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/five_all_side_padding"
+                        android:background="@color/color_blue_p"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/linear_register"
+                    android:layout_marginTop="@dimen/seven_space"
+                    android:gravity="center">
+
+                    <ImageView android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:padding="@dimen/ten_all_side_padding"
+                               android:src="@drawable/my_profile"/>
+                    <com.widget.textstyle.MyEditText_Signika_Light
+                        android:id="@+id/edtParent1"
+                        style="@style/edittext_mobile_login"
+                        android:background="@null"
+                        android:hint="@string/str_parent_name"
+                        android:padding="@dimen/five_all_side_padding"
+                        android:textSize="@dimen/large_text_size">
+                        <requestFocus/>
+                    </com.widget.textstyle.MyEditText_Signika_Light>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/linear_register"
+                    android:gravity="center">
+
+                    <ImageView android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:padding="@dimen/ten_all_side_padding"
+                               android:src="@drawable/mobile"/>
+                    <com.widget.textstyle.MyEditText_Signika_Light
+                        android:id="@+id/edtPhone1"
+                        style="@style/edittext_mobile_login"
+                        android:background="@null"
+                        android:hint="@string/login_desc"
+                        android:inputType="number"
+                        android:maxLength="8"
+                        android:padding="@dimen/five_all_side_padding"
+                        android:textSize="@dimen/large_text_size">
+                        <requestFocus/>
+                    </com.widget.textstyle.MyEditText_Signika_Light>
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/linear_register"
+                    android:gravity="center">
+
+                    <ImageView android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:padding="@dimen/ten_all_side_padding"
+                               android:src="@drawable/email"/>
+                    <com.widget.textstyle.MyEditText_Signika_Light
+                        android:id="@+id/edtEmail1"
+                        style="@style/edittext_mobile_login"
+                        android:background="@null"
+                        android:hint="@string/str_email_address"
+                        android:padding="@dimen/five_all_side_padding"
+                        android:inputType="textEmailAddress"
+                        android:textSize="@dimen/large_text_size">
+                        <requestFocus/>
+                    </com.widget.textstyle.MyEditText_Signika_Light>
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/linear_register"
+                    android:gravity="center">
+
+                    <ImageView android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:padding="@dimen/ten_all_side_padding"
+                               android:src="@drawable/pincode"/>
+                    <com.widget.textstyle.MyEditText_Signika_Light
+                        android:id="@+id/edtPincode"
+                        style="@style/edittext_mobile_login"
+                        android:background="@null"
+                        android:hint="@string/str_input_pincode"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:padding="@dimen/five_all_side_padding"
+                        android:textSize="@dimen/large_text_size">
+                        <requestFocus/>
+                    </com.widget.textstyle.MyEditText_Signika_Light>
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/linear_register"
+                    android:gravity="center">
+
+                    <ImageView android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:padding="@dimen/ten_all_side_padding"
+                               android:src="@drawable/pincode"/>
+                    <com.widget.textstyle.MyEditText_Signika_Light
+                        android:id="@+id/edtConfirmcode"
+                        style="@style/edittext_mobile_login"
+                        android:background="@null"
+                        android:hint="@string/str_input_confirmcode"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:padding="@dimen/five_all_side_padding"
+                        android:textSize="@dimen/large_text_size">
+                        <requestFocus/>
+                    </com.widget.textstyle.MyEditText_Signika_Light>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/linear_register"
+                    android:layout_marginTop="@dimen/ten_all_side_padding"
+                    android:background="@drawable/txt_cmd_blue"
+                    android:minHeight="@dimen/forty_margin"
+                    android:orientation="horizontal">
+                    <RelativeLayout
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+                        <com.widget.textstyle.MyTextView_Signika_Bold
+                            android:id="@+id/txt_next"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:text="@string/str_login"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/large_text_size"
+                            android:textStyle="bold"
+                            />
+                        <ImageView
+                            android:layout_width="@dimen/menu_img_size"
+                            android:layout_height="@dimen/menu_img_size"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="@dimen/five_all_side_padding"
+                            android:layout_toRightOf="@+id/txt_next"
+                            android:src="@drawable/next_arrow"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

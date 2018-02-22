@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lin_grp_chk"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/five_all_side_padding"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/chk_item"
+            style="@style/rel_item"
+            android:layout_marginRight="@dimen/ten_all_side_padding"
+            android:background="@drawable/adres_checkbox_white_image"
+            android:button="@null"
+            android:gravity="center_vertical" />
+
+        <com.widget.textstyle.MyTextView_Signika_Bold
+            android:id="@+id/txt_grp_nm"
+            style="@style/rel_item"
+            android:layout_margin="@dimen/zero_dp"
+            android:text="@string/clsname"
+            android:textColor="@color/light_green"
+            android:textSize="@dimen/normal_text_size"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_downarrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/five_all_side_padding"
+        android:src="@drawable/dropdown" />
+</RelativeLayout>

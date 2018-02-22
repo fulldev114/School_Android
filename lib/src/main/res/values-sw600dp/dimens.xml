@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="keyboard_button_text_size">40sp</dimen>
+    <dimen name="keyboard_button_padding">25dp</dimen>
+    <dimen name="keyboard_button_ripple_padding">40dp</dimen>
+    <dimen name="pin_code_round_size">40dp</dimen>
+    <dimen name="pin_code_round_margin">15dp</dimen>
+    <dimen name="light_gray_bar_margin_top">30dp</dimen>
+    <dimen name="light_gray_bar_margin_bottom">15dp</dimen>
+    <dimen name="light_gray_bar_margin_sides">60dp</dimen>
+    <dimen name="pin_code_forgot_text_size">26sp</dimen>
+    <dimen name="pin_code_step_text_size">30sp</dimen>
+    <dimen name="pin_code_elements_margin">30dp</dimen>
+    <dimen name="activity_pin_code_padding">30dp</dimen>
+    <dimen name="pin_code_logo_margin">40dp</dimen>
+    <dimen name="pin_code_round_top_margin">20dp</dimen>
+    <dimen name="small_text_size">27sp</dimen>
+    <dimen name="pin_code_round_margin_right">15dp</dimen>
+
+    <dimen name="keyboard_margin_top">90dp</dimen>
+    <dimen name="enter_pincode_size">35sp</dimen>
+    <dimen name="one_dp">2dp</dimen>
+</resources>

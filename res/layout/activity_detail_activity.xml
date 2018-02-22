@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/incl"
+        layout="@layout/header_activity"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:layout_margin="@dimen/micro_text_size"
+        android:orientation="vertical">
+        <com.widget.textstyle.MyTextView_Signika_Bold
+            android:id="@+id/date_textview"
+            style="@style/textview"
+            android:text="Swimming"
+            android:textColor="@color/text_color_yellow"
+            android:textSize="@dimen/xlarge_text_size"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/twenty_size"
+                android:layout_height="@dimen/twenty_size"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/twenty_size"
+                android:src="@drawable/position" />
+            <com.widget.textstyle.MyTextView_Signika_Regular
+                android:id="@+id/textView_place"
+                style="@style/textview"
+                android:text="School Swimming Pool"
+                android:textColor="@color/white_light"
+                android:textSize="@dimen/normal_text_size"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/five_all_side_padding"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/twenty_size"
+                android:layout_height="@dimen/twenty_size"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/twenty_size"
+                android:src="@drawable/calendar" />
+            <com.widget.textstyle.MyTextView_Signika_Regular
+                android:id="@+id/textView_date"
+                style="@style/textview"
+                android:layout_width="wrap_content"
+                android:text="22 Mar,2017 - "
+                android:textColor="@color/white_light"
+                android:textSize="@dimen/normal_text_size"/>
+            <com.widget.textstyle.MyTextView_Signika_Bold
+                android:id="@+id/textview_time"
+                style="@style/textview"
+                android:text="14:30"
+                android:textColor="@color/white_light"
+                android:textSize="@dimen/normal_text_size"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <com.widget.textstyle.MyTextView_Signika_Bold
+            android:id="@+id/teachers_textview"
+            style="@style/textview"
+            android:layout_marginTop="@dimen/thirty_top"
+            android:text="@string/teachers_title"
+            android:textColor="@color/text_color_yellow"
+            android:textSize="@dimen/eighteen_size"
+            android:textStyle="bold"/>
+        <com.widget.textstyle.MyTextView_Signika_Regular
+            android:id="@+id/teachers_name"
+            style="@style/textview"
+            android:text="Simon Oliver, Kevin, Denny Chris, Jhonson"
+            android:textColor="@color/white_light"
+            android:textSize="@dimen/normal_text_size"/>
+        <com.widget.textstyle.MyTextView_Signika_Bold
+            android:id="@+id/students_textview"
+            style="@style/textview"
+            android:layout_marginTop="@dimen/thirty_top"
+            android:text="@string/teachers_title"
+            android:textColor="@color/text_color_yellow"
+            android:textSize="@dimen/eighteen_size"
+            android:textStyle="bold"/>
+        <com.widget.textstyle.MyTextView_Signika_Regular
+            android:id="@+id/students_name"
+            style="@style/textview"
+            android:text="Simon Oliver, Kevin, Denny Chris, Jhonson"
+            android:textColor="@color/white_light"
+            android:textSize="@dimen/normal_text_size"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

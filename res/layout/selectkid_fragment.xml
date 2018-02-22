@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/background"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/ten_all_side_padding">
+        <ListView
+            android:id="@+id/list_children"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:choiceMode="singleChoice"
+            android:divider="@null"
+            android:visibility="visible"
+            android:fadingEdge="none"
+            android:overScrollMode="never"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:weightSum="1"
+        >
+        <com.widget.textstyle.MyTextView_Signika_Regular
+            android:id="@+id/btnAddChild"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@drawable/btn_cmd"
+            android:text="@string/str_add_newchild"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/normal_text_size"
+            />
+    </LinearLayout>
+</LinearLayout>

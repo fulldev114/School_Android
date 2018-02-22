@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/ten_all_side_padding"
+              android:weightSum="1">
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadingEdge="none"
+                android:fillViewport="true"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+
+
+            <ImageView
+                style="@style/ImageAppLogog"
+                android:layout_marginTop="@dimen/forty_margin"
+                android:src="@drawable/adres_side_csadm_logo"/>
+
+            <LinearLayout
+                style="@style/linearlayout_login"
+                android:background="@drawable/liner_white_border_rect"
+                android:gravity="center">
+
+                <ImageView android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:padding="@dimen/ten_all_side_padding"
+                           android:src="@drawable/pincode"/>
+                <com.widget.textstyle.MyEditText_Signika_Light
+                    android:id="@+id/editText_currentpincode"
+                    style="@style/edittext_mobile_login"
+                    android:background="@null"
+                    android:hint="@string/old_pincode"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:padding="@dimen/five_all_side_padding"
+                    android:singleLine="true"
+                    android:textSize="@dimen/large_text_size">
+                </com.widget.textstyle.MyEditText_Signika_Light>
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/linearlayout_login"
+                android:layout_marginTop="@dimen/ten_all_side_padding"
+                android:background="@drawable/liner_white_border_rect"
+                android:gravity="center">
+
+                <ImageView android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:padding="@dimen/ten_all_side_padding"
+                           android:src="@drawable/pincode"/>
+                <com.widget.textstyle.MyEditText_Signika_Light
+                    android:id="@+id/editText_newpincode"
+                    style="@style/edittext_mobile_login"
+                    android:background="@null"
+                    android:hint="@string/new_pincode"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:padding="@dimen/five_all_side_padding"
+                    android:singleLine="true"
+                    android:textSize="@dimen/large_text_size">
+                </com.widget.textstyle.MyEditText_Signika_Light>
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/linearlayout_login"
+                android:layout_marginTop="@dimen/ten_all_side_padding"
+                android:background="@drawable/liner_white_border_rect"
+                android:gravity="center">
+
+                <ImageView android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:padding="@dimen/ten_all_side_padding"
+                           android:src="@drawable/pincode"/>
+                <com.widget.textstyle.MyEditText_Signika_Light
+                    android:id="@+id/editText_confirmpincode"
+                    style="@style/edittext_mobile_login"
+                    android:background="@null"
+                    android:hint="@string/confirm_pincode"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:padding="@dimen/five_all_side_padding"
+                    android:singleLine="true"
+                    android:textSize="@dimen/large_text_size">
+                </com.widget.textstyle.MyEditText_Signika_Light>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/send"
+                style="@style/linearlayout_login"
+                android:layout_marginTop="@dimen/twenty_size"
+                android:background="@drawable/txt_cmd_blue"
+                android:gravity="center"
+                android:minHeight="@dimen/btn_height"
+                android:orientation="horizontal">
+
+                <com.widget.textstyle.MyTextView_Signika_Bold
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="@string/changepincode_value"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/large_text_size"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+            <com.widget.textstyle.MyTextView_Signika_Bold
+                android:id="@+id/txt_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/ten_all_side_padding"
+                android:gravity="center"
+                android:padding="@dimen/five_all_side_padding"
+                android:text="@string/cancel"
+                android:textColor="@color/light_green"
+                android:textSize="@dimen/large_text_size"
+                android:textStyle="bold"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

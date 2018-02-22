@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rel_top_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+        <!--<com.common.view.CircularImageView-->
+        <!--android:layout_width="@dimen/profile_img_size"-->
+        <!--android:layout_height="@dimen/profile_img_size"-->
+        <!--android:id="@+id/imgPropile"-->
+        <!--android:src="@drawable/cslink_avatar_unknown"-->
+        <!--android:scaleType="fitXY"/>-->
+        <RelativeLayout
+            android:id="@+id/rel_reason"
+            android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+
+            <com.widget.textstyle.MyTextView_Signika_Bold
+                android:id="@+id/textView_res"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:padding="@dimen/ten_all_side_padding"
+                android:text="@string/str_select_reason"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/color_dark_blue"
+                android:layout_toLeftOf="@+id/dropdown"
+                android:textSize="@dimen/large_text_size"
+                />
+            <ImageView
+                android:id="@+id/dropdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/ten_all_side_padding"
+                android:src="@drawable/adres_dropdown_blue"
+                android:visibility="visible"/>
+        </RelativeLayout>
+
+        <com.widget.textstyle.MyTextView_Signika_Regular
+            android:id="@+id/textView_ans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:paddingLeft="@dimen/ten_all_side_padding"
+            android:text="@string/str_select_reason"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/color_dark_blue"
+            android:layout_below="@+id/rel_reason"
+            android:textSize="@dimen/small_text_size"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rel_second"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/forty_foursize"
+        android:background="@color/color_white_tran"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/ten_all_side_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/two_dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <com.widget.textstyle.MyTextView_Signika_Regular
+                android:id="@+id/txtPeriod"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/ten_all_side_padding"
+                android:text="1 time"
+                android:textColor="@color/color_dark_blue"
+                android:textSize="@dimen/normal_text_size"
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+                <com.widget.textstyle.MyTextView_Signika_Regular
+                    android:id="@+id/imgStatus"
+                    android:layout_width="@dimen/small_profile_img_size"
+                    android:layout_height="@dimen/small_profile_img_size"
+                    android:background="@drawable/adres_present_green"/>
+
+                <com.widget.textstyle.MyTextView_Signika_Regular
+                    android:id="@+id/txtStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/five_all_side_padding"
+                    android:paddingRight="@dimen/five_all_side_padding"
+                    android:text="@string/str_present"
+                    android:textColor="@color/color_dark_blue"
+                    android:textSize="@dimen/normal_text_size"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

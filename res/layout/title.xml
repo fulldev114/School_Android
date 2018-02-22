@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_medium_blue" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:id="@+id/btnbck"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/fifty_top"
+                android:gravity="left"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/imgback"
+                    android:layout_width="@dimen/forty_margin"
+                    android:layout_height="@dimen/btn_height"
+                    android:gravity="left"
+                    android:paddingLeft="@dimen/seven_space"
+                    android:paddingTop="@dimen/twelve_dp"
+                    android:paddingBottom="@dimen/five_all_side_padding"
+                    android:src="@drawable/menu_icon" />
+
+            </LinearLayout>
+
+            <com.widget.textstyle.MyTextView_Signika_Bold
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/textsize"
+                />
+
+            <LinearLayout
+                android:id="@+id/btnAbsentNotice"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/fifty_top"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/sixty_top"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/fiften_space"
+                    android:paddingTop="@dimen/twelve_dp"
+                    android:paddingBottom="@dimen/five_all_side_padding"
+                     />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btnUpdateProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/sixty_top"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:padding="@dimen/ten_all_side_padding"
+                    android:src="@drawable/edit_icon" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lin_emergency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/fifty_five"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:padding="@dimen/ten_all_side_padding"
+                    android:src="@drawable/alert" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

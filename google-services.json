@@ -1,0 +1,41 @@
+{
+  "project_info": {
+    "project_number": "410334804901",//"526105049726",
+    "project_id": "cslink-f1b4f",//"cslink-1470114721262",
+    "name": "CSlink"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410334804901:android:b0ed03bc164821ea",//"1:526105049726:android:b0ed03bc164821ea",
+        "client_id": "android:com.absents.apps",//com.absents.apps
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.absents.apps" //com.absents.apps
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key":"AIzaSyANREP65XJmjXzc-XJjxU0nx5VAbwccnQ0" //"AIzaSyDoWt5X6QDeBL8wP9MX4wyvSPidQPnqAQc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

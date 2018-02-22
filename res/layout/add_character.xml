@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/ten_all_side_padding">
+
+    <include
+        android:id="@+id/incl"
+        layout="@layout/header_activity"
+        />
+
+    <ScrollView
+        style="@style/scroll_bar"
+        android:layout_below="@+id/incl"
+        android:layout_margin="@dimen/ten_all_side_padding"
+        >
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+            >
+
+            <!--   Start  Student Information    -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty_size"
+                android:orientation="horizontal"
+                >
+
+                <com.widget.textstyle.MyTextView_Signika_Semibold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subject_info"
+                    android:textAllCaps="true"
+                    android:textColor="@color/color_blue_p"
+                    android:textSize="@dimen/small_text_size"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/one_half_dpi"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/five_all_side_padding"
+                    android:background="@color/color_blue_p"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyt_study"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_all_side_padding"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                >
+
+                <com.widget.textstyle.MyTextView_Signika_Regular
+                    style="@style/add_mark"
+                    android:layout_weight="0.48"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/study_yr"
+                    />
+                <RelativeLayout
+                    android:id="@+id/rel_yr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.52"
+                    >
+                    <Spinner
+                        android:id="@+id/spn_yr"
+                        style="@style/scroll_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@null"
+                        android:dropDownWidth="match_parent"
+                        android:gravity="right|center_vertical"
+                        android:popupTheme="@color/white_light"
+                        android:scrollbars="none"
+                        android:spinnerMode="dropdown"
+                        android:text="8A"
+                        android:textColor="@color/white_light"
+
+                        />
+                    <ImageView
+                        android:id="@+id/img_dropdown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/five_all_side_padding"
+                        android:focusable="false"
+                        android:src="@drawable/dropdown"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/half_dpi"
+                android:layout_marginTop="@dimen/five_all_side_padding"
+                android:background="@color/_gray"
+                android:visibility="visible"/>
+
+            <LinearLayout
+                android:id="@+id/lyt_semester"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_all_side_padding"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                >
+
+                <com.widget.textstyle.MyTextView_Signika_Regular
+                    style="@style/add_mark"
+                    android:layout_weight="0.48"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/select_sem"
+                    />
+                <RelativeLayout
+                    android:id="@+id/rel_sem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.52"
+                    android:gravity="right|center_vertical"
+                    >
+                    <Spinner
+                        android:id="@+id/spn_sem"
+                        style="@style/scroll_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:dropDownWidth="match_parent"
+                        android:popupTheme="@color/white_light"
+                        android:spinnerMode="dropdown"
+                        android:text="8A"
+                        android:padding="@dimen/twelve_dp"
+                        android:textColor="@color/white_light"
+                        />
+                    <ImageView
+                        android:id="@+id/img_dropdown1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:focusable="false"
+                        android:src="@drawable/dropdown"
+                        android:visibility="visible"/>
+                </RelativeLayout>
+                <!-- <com.widget.textstyle.MyTextView_Signika_Regular
+                     android:id="@+id/text_semester"
+                     style="@style/add_mark"
+                     android:layout_weight="0.55"
+                     android:gravity="right|center_vertical"
+                     />-->
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/half_dpi"
+                android:layout_marginTop="@dimen/five_all_side_padding"
+                android:background="@color/_gray"
+                android:visibility="visible"/>
+
+            <RelativeLayout
+                android:id="@+id/rel_subject"
+                style="@style/button"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/seven_space">
+                <Spinner
+                    android:id="@+id/text_subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:dropDownWidth="match_parent"
+                    android:popupTheme="@color/white_light"
+                    android:spinnerMode="dropdown"
+                    android:text="8A"
+                    android:textColor="@color/white_light"
+
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:focusable="false"
+                    android:src="@drawable/dropdown"/>
+            </RelativeLayout>
+
+            <!--&lt;!&ndash; <View
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/half_dpi"
+                 android:layout_marginTop="@dimen/five_all_side_padding"
+                 android:background="@color/_gray"
+                 android:visibility="visible"/>
+             <LinearLayout
+                 android:id="@+id/lyt_examno"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="@dimen/ten_all_side_padding"
+                 android:gravity="center"
+                 android:orientation="horizontal"
+                 android:visibility="visible"
+                 >
+
+                 <com.widget.textstyle.MyTextView_Signika_Regular
+                     style="@style/add_mark"
+                     android:layout_weight="0.48"
+                     android:gravity="left|center_vertical"
+                     android:text="@string/exam_no"
+                     />
+                 <RelativeLayout
+                     android:id="@+id/rel_exam"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="0.52"
+                     android:gravity="right|center_vertical"
+                     >
+                     <Spinner
+                         android:id="@+id/spn_exam"
+                         style="@style/scroll_bar"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:dropDownWidth="match_parent"
+                         android:popupTheme="@color/white_light"
+                         android:layout_alignParentRight="true"
+                         android:spinnerMode="dropdown"
+                         android:text="8A"
+                         android:background="@null"
+                         android:textColor="@color/white_light"
+                         />
+                 </RelativeLayout>&ndash;&gt;
+                 &lt;!&ndash; <com.widget.textstyle.MyTextView_Signika_Regular
+                      android:id="@+id/text_semester"
+                      style="@style/add_mark"
+                      android:layout_weight="0.55"
+                      android:gravity="right|center_vertical"
+                      />&ndash;&gt;
+             </LinearLayout>-->
+
+            <!--  End  Student Information    -->
+
+            <!-- Startcomment   -->
+            <com.widget.textstyle.MyEdiText_Signika_Regular
+                android:id="@+id/edt_comment"
+                style="@style/add_mark"
+                android:layout_marginTop="@dimen/twenty_size"
+                android:background="@drawable/liner_white_border"
+                android:gravity="top"
+                android:hint="@string/comment"
+                android:lines="4"
+                android:padding="@dimen/five_all_side_padding"
+                android:textColorHint="@color/white_light"
+                android:visibility="visible"/>
+
+            <LinearLayout
+                android:id="@+id/lyt_save"
+                style="@style/linearlayout_login"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/fiften_space"
+                android:background="@drawable/txt_cmd_blue"
+                android:gravity="center"
+                android:minHeight="@dimen/forty_margin"
+                android:minWidth="@dimen/one_twenty"
+                >
+
+                <!--android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"-->
+
+                <com.widget.textstyle.MyTextView_Signika_Bold
+                    android:id="@+id/txt_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="@string/str_save"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/large_text_size"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

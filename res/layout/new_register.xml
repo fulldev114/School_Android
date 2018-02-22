@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textSize="@dimen/normal_text_size"
+                android:textColor="@color/font_text_color"
+                android:text="@string/str_input_register_desc" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/txtParent1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".3"
+                android:paddingRight="5dp"
+                android:gravity="right|center"
+                android:textSize="@dimen/small_text_size"
+                android:textColor="@color/font_gray_blue"
+                android:text="@string/profile_hint_parent1" />
+
+            <EditText
+                android:background="@drawable/chatbubble"
+                android:id="@+id/edtParent1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".65"
+                android:singleLine="true"
+                android:padding="5dp"
+                android:gravity="left|center"
+                android:editable="true"
+                android:textSize="@dimen/small_text_size"
+                android:hint="@string/str_parent_name"
+                android:text=""
+                android:textColor="@color/color_blue" >
+            </EditText>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/txtPhone1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".3"
+                android:padding="5dp"
+                android:gravity="right|center"
+                android:textSize="@dimen/small_text_size"
+                android:textColor="@color/font_gray_blue"
+                android:text="@string/profile_hint_phone_withoutdot" />
+
+            <EditText
+                android:background="@drawable/chatbubble"
+                android:id="@+id/edtPhone1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".65"
+                android:singleLine="true"
+                android:padding="5dp"
+                android:maxLength="8"
+                android:gravity="left|center"
+                android:editable="true"
+                android:textSize="@dimen/small_text_size"
+                android:hint="@string/str_phone_number"
+                android:text=""
+                android:inputType="phone"
+                android:textColor="@color/color_blue" >
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/txtEmail1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".3"
+                android:padding="5dp"
+                android:gravity="right|center"
+                android:textSize="@dimen/small_text_size"
+                android:textColor="@color/font_gray_blue"
+                android:text="@string/str_email1" />
+
+            <EditText
+                android:background="@drawable/chatbubble"
+                android:id="@+id/edtEmail1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".65"
+                android:singleLine="true"
+                android:padding="5dp"
+                android:gravity="left|center"
+                android:editable="true"
+                android:textSize="@dimen/small_text_size"
+                android:hint="@string/str_email_address"
+                android:text=""
+                android:inputType="textEmailAddress"
+                android:textColor="@color/color_blue" >
+            </EditText>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/txtParent2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".3"
+                android:paddingRight="5dp"
+                android:gravity="right|center"
+                android:textSize="@dimen/small_text_size"
+                android:textColor="@color/font_gray_blue"
+                android:text="@string/profile_hint_parent2" />
+
+            <EditText
+                android:background="@drawable/chatbubble"
+                android:id="@+id/edtParent2"
+                android:layout_width="0dp"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:layout_weight=".65"
+                android:padding="5dp"
+                android:gravity="left|center"
+                android:editable="true"
+                android:textSize="@dimen/small_text_size"
+                android:hint="@string/str_parent_name"
+                android:text=""
+                android:textColor="@color/color_blue" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/txtPhone2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".3"
+                android:padding="5dp"
+                android:gravity="right|center"
+                android:textSize="@dimen/small_text_size"
+                android:textColor="@color/font_gray_blue"
+                android:text="@string/profile_hint_phone2" />
+
+            <EditText
+                android:background="@drawable/chatbubble"
+                android:id="@+id/edtPhone2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_weight=".65"
+                android:padding="5dp"
+                android:maxLength="8"
+                android:gravity="left|center"
+                android:editable="true"
+                android:textSize="@dimen/small_text_size"
+                android:hint="@string/str_phone_number"
+                android:text=""
+                android:inputType="phone"
+                android:textColor="@color/color_blue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/txtEmail2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".3"
+                android:padding="5dp"
+                android:gravity="right|center"
+                android:textSize="@dimen/small_text_size"
+                android:textColor="@color/font_gray_blue"
+                android:text="@string/str_email2" />
+
+            <EditText
+                android:background="@drawable/chatbubble"
+                android:id="@+id/edtEmail2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".65"
+                android:singleLine="true"
+                android:padding="5dp"
+                android:gravity="left|center"
+                android:editable="true"
+                android:textSize="@dimen/small_text_size"
+                android:hint="@string/str_email_address"
+                android:text=""
+                android:inputType="textEmailAddress"
+                android:textColor="@color/color_blue" >
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:visibility="visible"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".03"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/txtPinCode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".3"
+                android:padding="5dp"
+                android:gravity="right|center"
+                android:textSize="@dimen/small_text_size"
+                android:textColor="@color/font_gray_blue"
+                android:text="@string/str_input_pincode" />
+
+            <EditText
+                android:background="@drawable/chatbubble"
+                android:id="@+id/edtConfirmcode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".65"
+                android:singleLine="true"
+                android:padding="5dp"
+                android:gravity="left|center"
+                android:editable="true"
+                android:maxLength="4"
+                android:textSize="@dimen/normal_text_size"
+                android:text=""
+                android:inputType="numberPassword"
+                android:textColor="@color/color_blue" >
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/txtConfirmCode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".3"
+                android:padding="5dp"
+                android:gravity="right|center"
+                android:textSize="@dimen/small_text_size"
+                android:textColor="@color/font_gray_blue"
+                android:text="@string/str_input_confirmcode" />
+
+            <EditText
+                android:background="@drawable/chatbubble"
+                android:id="@+id/edtPincode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".65"
+                android:singleLine="true"
+                android:padding="5dp"
+                android:gravity="left|center"
+                android:editable="true"
+                android:maxLength="4"
+                android:textSize="@dimen/normal_text_size"
+                android:text=""
+                android:inputType="numberPassword"
+                android:textColor="@color/color_blue" >
+            </EditText>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".02"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            >
+
+            <TextView
+                android:id="@+id/btnRegister"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".85"
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@drawable/btn_cmd"
+                android:text="@string/str_register"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/normal_text_size"
+                android:visibility="visible"
+                >
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".05"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            >
+
+            <TextView
+                android:id="@+id/btnBack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".85"
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@drawable/btn_cmd"
+                android:text="@string/str_back"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/normal_text_size"
+                android:visibility="visible"
+                >
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".1"
+            />
+    </LinearLayout>
+
+</LinearLayout>

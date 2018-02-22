@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_light"
+    android:padding="@dimen/five_all_side_padding">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/text1"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+        <com.widget.textstyle.MyTextView_Signika_Regular
+            android:id="@+id/txt_stname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="name"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_dark_blue"
+            android:textSize="@dimen/normal_text_size"
+            />
+
+    </LinearLayout>
+
+    <CheckBox android:id="@+id/text1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:button="@drawable/checkbox_image"
+              android:layout_centerVertical="true"
+              android:padding="@dimen/five_all_side_padding"
+        android:visibility="visible"/>
+
+
+</RelativeLayout>
+
+
+

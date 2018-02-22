@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_blue"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:dropDownWidth="match_parent"
+            android:popupBackground="@color/white_light"
+            android:spinnerMode="dropdown"
+            />
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:focusable="false"
+            android:padding="@dimen/five_all_side_padding"
+            android:src="@drawable/dropdown"/>
+    </LinearLayout>
+
+    <CheckBox android:id="@android:id/text1"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:layout_alignParentRight="true"
+              android:button="@drawable/checkbox_white_image"
+              android:gravity="center_vertical"
+              android:padding="@dimen/ten_all_side_padding"
+              android:textColor="@color/white_light"
+              android:textSize="@dimen/normal_text_size"/>
+</RelativeLayout>-->
+
+
+
+    <CheckedTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_alignParentRight="true"
+                     android:checkMark="@drawable/checkbox_image"
+                     android:gravity="center_vertical"
+                     android:padding="@dimen/ten_all_side_padding"
+                     android:textColor="@color/color_dark_blue"
+                     android:textSize="@dimen/normal_text_size"/>

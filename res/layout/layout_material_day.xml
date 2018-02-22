@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/material_calendar_selected_day"
+        android:src="@drawable/current_day_selector"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:id="@+id/material_calendar_day"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:id="@+id/saved_event_imageView"
+        android:layout_below="@+id/material_calendar_day"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/saved_events_selector"
+        android:visibility="invisible"/>
+</RelativeLayout>

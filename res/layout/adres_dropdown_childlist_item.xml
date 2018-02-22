@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<CheckedTextView android:id="@+id/text1"
+                 style="?android:attr/spinnerDropDownItemStyle"
+                 xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/forty_margin"
+                 android:ellipsize="marquee"
+                 android:paddingLeft="@dimen/ten_all_side_padding"
+                 android:background="@drawable/adres_liner_white_border_blue_color"
+                 android:singleLine="true"
+                 android:text="Feber"
+                 android:textAlignment="inherit"
+                 android:textColor="@color/white_light"
+                 android:textSize="@dimen/small_text_size"
+                 android:textStyle="bold"/>

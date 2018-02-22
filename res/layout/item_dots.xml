@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <com.common.view.SquareImageView
+        android:id="@+id/one_image"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/twenty_size"
+        android:layout_marginLeft="@dimen/five_all_side_padding"
+        android:maxHeight="@dimen/twenty_size"
+        android:maxWidth="@dimen/twenty_size"
+        android:src="@drawable/circle_white_empty"/>
+
+</LinearLayout>

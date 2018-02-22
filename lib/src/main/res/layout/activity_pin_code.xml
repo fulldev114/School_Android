@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background"
+            android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/activity_pin_code_padding">
+        <RelativeLayout android:id="@+id/relwrraper"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+            />
+
+
+        <com.github.orangegangsters.lollipin.lib.textstyle.MyTextView_Signika_Light
+            android:id="@+id/pin_code_step_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relwrraper"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/light_gray_bar_margin_sides"
+            android:textColor="@color/white_light"
+            android:textSize="@dimen/enter_pincode_size"
+            />
+
+        <com.github.orangegangsters.lollipin.lib.views.PinCodeRoundView
+            android:id="@+id/pin_code_round_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pin_code_step_textview"
+            android:layout_marginBottom="@dimen/pin_code_elements_margin"
+            android:layout_marginTop="@dimen/pin_code_round_top_margin"/>
+
+        <com.github.orangegangsters.lollipin.lib.textstyle.MyTextView_Signika_Bold
+            android:id="@+id/pin_code_forgot_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pin_code_round_view"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/pin_code_elements_margin"
+            android:textColor="@color/color_blue_p"
+            android:textSize="@dimen/enter_pincode_size"
+            android:textStyle="bold"
+            tools:text="@string/pin_code_forgot_text"/>
+
+
+        <com.github.orangegangsters.lollipin.lib.views.KeyboardView
+            android:id="@+id/pin_code_keyboard_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/keyboard_margin_top"
+            android:layout_below="@+id/pin_code_forgot_textview"/>
+
+    </RelativeLayout>
+</ScrollView>

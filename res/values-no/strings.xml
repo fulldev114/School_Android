@@ -1,0 +1,389 @@
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <string name="app_name">CSlink</string>
+    <string name="update_profile_schoolid">Skolenavn</string>
+    <string name="aboutus_app">CSlink er en applikasjon for kommunikasjon mellom skole og foresatte. Foresatte har gjennom appen mulighet til å sende meldinger til skolen og rapportere om fravær. De får også oversikt over elevens totale fravær og informasjon om karakterer, orden og atferd. Løsningen er utviklet i samarbeid med Tindlund ungdomsskole i Sarpsborg kommune.</string>
+    <string name="aboutus_copyright">Copyright 2016 CSlink, appsbusinesstore</string>
+    <string name="aboutus_all">All right reserved worldwide.</string>
+    <string name="select_kid_done">Utført</string>
+    <string name="select_all">Velg hele dag</string>
+    <string name="subjects">Timer</string>
+    <string name="msg_response">Ugyldig mobilnummer, prøv igjen!</string>
+    <string name="msg_invalid_phone_content">Ugyldig mobilnummer, prøv igjen!</string>
+    <string name="msg_no_password">Tast inn pin-kode</string>
+    <string name="success_new_password">Nytt passord er sendt til eposten din.</string>
+    <string name="str_phone">Mobilnummer</string>
+    <string name="str_password">Passord</string>
+    <string name="str_forgot_password">Glemt passord?</string>
+    <string name="failed_confirm_passwd">Passordet er feil, prøv igjen</string>
+    <string name="str_chat">Melding</string>
+    <string name="loading_image">Laster opp bilde...</string>
+    <string name="msg_input_parent2_phone">Tast inn mobilenummer til foresatte 2</string>
+    <string name="msg_input_mobile">Tast inn mobilnummer.</string>
+    <string name="str_reason_feber">Feber</string>
+    <string name="str_from">Fra :</string>
+    <string name="str_to">Til</string>
+    <string name="str_result">Resultater</string>
+    <string name="str_fromdate">Fra dato</string>
+    <string name="str_todate">Til dato</string>
+    <string name="msg_no_input_fromdate">Velg fra dato.</string>
+    <string name="str_current_pincode">Nåværende pin-kode</string>
+    <string name="aboutus_version">Versjon:1.1.7</string>
+    <string name="str_versionstring">Versjon - 1 . 1 . 7</string>
+    <string name="error_msg">Skriv melding</string>
+    <string name="login_phone_hint">Mobilnummer</string>
+    <string name="login_desc">Mobilnummer</string>
+    <string name="str_login">Neste</string>
+    <string name="register_child_button">Nytt medlem</string>
+    <string name="language_english">Engelsk</string>
+    <string name="language_norwgian">Norsk</string>
+    <string name="notification">Meldinger</string>
+    <string name="aboutus">Om oss</string>
+    <string name="change_pincode">Endre pin-kode</string>
+    <string name="todate">Til dato</string>
+    <string name="send">Send</string>
+    <string name="message_hint">Melding</string>
+    <string name="new_pincode">Ny pin-kode</string>
+    <string name="confirm_pincode">Bekreft ny pin-kode</string>
+    <string name="profile_edit">Rediger profil</string>
+    <string name="profile_hint_parent1">Foresatte1</string>
+    <string name="profile_hint_parent2">Foresatte 2:</string>
+    <string name="profile_hint_phone1">Mobil:</string>
+    <string name="profile_hint_phone2">Mobil 2:</string>
+    <string name="profile_hint_class">Klasse :</string>
+    <string name="profile_hint_classincharge">Kontaktlærer:</string>
+    <string name="profile_button_update">Lagre</string>
+    <string name="update_profile_header">Large profil</string>
+    <string name="update_profile_mobile">Mobil</string>
+    <string name="select_kid">Velg elev</string>
+    <string name="select_subject">Velg time(r)</string>
+    <string name="msg_invalidphone">Ugyldig mobilnummer.</string>
+    <string name="msg_no_phone">Tast inn mobilenummer.</string>
+    <string name="msg_not_register_phone">Mobilnummeret ditt finnes ikke i vårt register</string>
+    <string name="msg_operation_error">Sjekk internettforbindelse og prøv igjen.</string>
+    <string name="str_network_error">Nettverk feil</string>
+    <string name="str_wait">Vennligst vent....</string>
+    <string name="str_english">Engelsk</string>
+    <string name="str_norwegian">Norsk</string>
+    <string name="str_cancel">Avbryt</string>
+    <string name="str_ok">Ok</string>
+    <string name="str_success">Vellykket</string>
+    <string name="str_alert">Varsel</string>
+    <string name="str_loading">Henter data...</string>
+    <string name="update_dontshow">Ikke vis denne meldingen igjen.</string>
+    <string name="str_forgot_pincode">Glemt pin-kode?</string>
+    <string name="str_input_pincode_desc">Tast inn pin-kode</string>
+    <string name="str_pincode">Pin-kode</string>
+    <string name="msg_fill_require">Alle påkrevde felt må fylles ut.</string>
+    <string name="msg_wrong_pincode">Feil pin-kode</string>
+    <string name="success_send_pincode">Pin-kode er sendt til SMS.</string>
+    <string name="str_logout">Logg ut</string>
+    <string name="msg_confirm_logout">Ønsker du å logge ut?</string>
+    <string name="str_message">Melding</string>
+    <string name="str_select_student">Velg elev</string>
+    <string name="str_input_message">Skriv epost adresse og meldingen din.</string>
+    <string name="str_profile">Profil</string>
+    <string name="str_name">Navn:</string>
+    <string name="str_school">Skole:</string>
+    <string name="str_edit">Rediger</string>
+    <string name="add_photo">Legg til bilde</string>
+    <string name="photo_album">Velg bilde</string>
+    <string name="camera">Ta nytt bilde</string>
+    <string name="myprofile_photo_sel_remove_text">Slett bilde</string>
+    <string name="cancel">Avbryt</string>
+    <string name="success_update_profile">Profilen din er oppdatert.</string>
+    <string name="msg_invalidparent2phone">Ugyldig mobilnummer til Foresatte 2</string>
+    <string name="msg_invalidparent1phone">Ugyldig mobilnummer til Foresatte 1</string>
+    <string name="msg_input_name">Tast inn elevnavn.</string>
+    <string name="msg_input_parent1_name">Tast inn navn til Foresatte 1</string>
+    <string name="msg_input_parent1_phone">Tast inn mobilnummer til Foresatte 1</string>
+    <string name="msg_input_parent2_name">Tast inn navn til foresatte 2</string>
+    <string name="title_important_notice">Info. fra skolen!</string>
+    <string name="success_submit_report">Fraværet er meldt inn</string>
+    <string name="msg_child_not_exist">Elev finnes ikke</string>
+    <string name="msg_no_period">Velg hele dag eller time.</string>
+    <string name="msg_no_reason">Velg årsak til fravær.</string>
+    <string name="msg_no_value_template">Ingen data finnes</string>
+    <string name="str_period">Skoletime</string>
+    <string name="str_absentreport">Fraværsrapport</string>
+    <string name="str_schoolname">Skolenavn =</string>
+    <string name="str_isreason">Årsak =</string>
+    <string name="str_istotalabsent">Antall fravær =</string>
+    <string name="str_istotalhours">Antall timer =</string>
+    <string name="str_istotaldays">Antall dager =</string>
+    <string name="str_istodate">Til dato =</string>
+    <string name="str_isfromdate">Fra dato =</string>
+    <string name="str_isparentname">Foreldre navn =</string>
+    <string name="str_isteacherincharge">Kontakt lærer =</string>
+    <string name="str_isstudentname">Elevnavn</string>
+    <string name="str_istelphone">Telefon =</string>
+    <string name="str_isemail">Epost =</string>
+    <string name="msg_send_error">Ingen fraværsdata registrert.</string>
+    <string name="str_days">Dag(er)</string>
+    <string name="msg_no_absent_recode">Ingen data finnes for valgte perioden.</string>
+    <string name="msg_no_childinfo">Ingen elev info er valgt.</string>
+    <string name="msg_no_input_todate">Velg til dato.</string>
+    <string name="success_create_pdf">Pdf. opprettet.</string>
+    <string name="str_get_report">Se rapport</string>
+    <string name="str_hours">Time(r)</string>
+    <string name="msg_success_feedback">Takk for din tilbakemelding!</string>
+    <string name="str_settings">Innstillinger</string>
+    <string name="str_notificatoin">Melding</string>
+    <string name="str_aboutus">Om oss</string>
+    <string name="str_change_pincode">Bytt pin-kode</string>
+    <string name="str_new_pincode">Ny pin-kode</string>
+    <string name="str_confirm_pincode">Bekreft pin-kode</string>
+    <string name="msg_pincode_notmatched">Ny pin-kode er ikke i samsvar med bekreftet pin-kode.
+    </string>
+    <string name="msg_no_currentpincode">Tast inn nåværende pin-kode</string>
+    <string name="msg_no_newpincode">Tast inn ny pin-kode</string>
+    <string name="msg_no_confirmpincode">Bekreft ny pin-kode</string>
+    <string name="msg_success_change_pincode">Pin-kode endret</string>
+    <string name="str_failed">Feil!!!</string>
+    <string name="verify_desc">Tast inn bekreftelseskode</string>
+    <string name="str_verificaton_code">Godkjenningskode</string>
+    <string name="title_invalid_vericod">Ugyldig bekreftelseskode</string>
+    <string name="msg_invalidvericod">Bekreftelseskode er feil, vennligst prøv igjen!</string>
+    <string name="str_title_error">Feilmelding</string>
+    <string name="title_absent_notice">Fraværsmelding</string>
+    <string name="msg_parent_not_exist">Foresatte 3 er ikke registrert.</string>
+    <string name="str_isphone">Mobilnummer er</string>
+    <string name="msg_no_email">Tast inn eposten din.</string>
+    <string name="msg_invalid_email">Feil epost adresse.</string>
+    <string name="str_phone_number">Mobilnummer</string>
+    <string name="str_register">Registrer</string>
+    <string name="str_email1">Epost:</string>
+    <string name="str_email2">Epost2:</string>
+    <string name="str_input_register_desc">Skriv in din profil info.</string>
+    <string name="str_email_address">Epost id.</string>
+    <string name="str_parent_name">Hele navnet</string>
+    <string name="str_parent_name2">Fullt navn</string>
+    <string name="failed_new_register">Nytt medlem registrering kunne ikke utføres, vennligst prøv
+        igjen senere.
+    </string>
+    <string name="success_new_register1">Takk for registreringen og velkommen som nytt medlem, logg
+        inn med oppgitt mobilnummer for å legge til en elev.
+    </string>
+    <string name="success_new_register2">Takk for registreringen, hvis eleven er ikke aktivert innen
+        24 timer, kontakt skolen din.
+    </string>
+    <string name="success_new_register">Takk for registreringen og velkommen som nytt medlem, logg
+        inn med oppgitt mobilnummer for å legge til en elev.
+    </string>
+    <string name="failed_duplicated_phone">Mobilnummer finnes allerede i vårt register, prøv igjenog
+        tast inn et annet nummer.
+    </string>
+    <string name="failed_sms_send">Mobilnummer finnes fra før, prøv igjen og tast et annet nummer.
+    </string>
+    <string name="str_add_newchild">Legg til ny elev</string>
+    <string name="str_select_reason">Velg årsak</string>
+    <string name="str_select_school">Velg skole</string>
+    <string name="str_grade">Klassetrinn:</string>
+    <string name="str_class">Klasse:</string>
+    <string name="str_add_child_desc">Velg elev</string>
+    <string name="str_all">Alle</string>
+    <string name="msg_not_selected_school">Velg skole</string>
+    <string name="msg_newstudent_not_exist">Det finnes ingen elev i databasen</string>
+    <string name="msg_no_grade_or_class">Velg klassetrinn eller klasse</string>
+    <string name="str_input_pincode">*Pin-kode:</string>
+    <string name="str_input_confirmcode">*Bekreft pin-kode:</string>
+    <string name="msg_input_pincode">Tast inn ønsket pin-kode på 4 siffer.</string>
+    <string name="msg_input_confirmcode">Bekeft pin-kode</string>
+    <string name="msg_not_matched_pincode">Bekreftet ny pin-kode samsvarer ikke med ny pin-kode.
+    </string>
+    <string name="msg_register_new_child">Takk for registrering, medlemskapet ditt blir aktivert
+        innen 24 timer/kontakt skolen din eventuelt.
+    </string>
+    <string name="failed_registered_already">Denne eleven er allerede registrert</string>
+    <string name="msg_not_active_child">Eleven er ikke aktiv enda, prøv igjen senere eller kontakt
+        skolen din.
+    </string>
+    <string name="msg_confirm_register_child">Er du sikker på at du vil registrere denne eleven?
+    </string>
+    <string name="str_birthday">Fødtselsdag :</string>
+    <string name="str_input_chatmessage">Skriv her...</string>
+    <string name="str_error_chatmsg">Melding er ikke sendt, sjekk internettforbindelsen din.
+    </string>
+    <string name="str_view">Les</string>
+    <string name="str_close">Lukk</string>
+    <string name="msg_no_pincode">Tast inn riktig pin-kode eller velg glemt pin-kode.</string>
+    <string name="str_back">Tilbake</string>
+    <string name="str_current_date_value">Velge Dato</string>
+    <string name="str_parent">Foresatte</string>
+    <string name="msg_no_right">Ingen tilgang.</string>
+    <string name="str_seen">Mottatt</string>
+    <string name="str_not_seen">Sendt</string>
+    <string name="profile_hint_contact">Foresatte3 </string>
+    <string name="profile_hint_phone3">Mobil :</string>
+    <string name="str_actived">Aktiv</string>
+    <string name="str_inactived">Deaktivert</string>
+    <string name="str_blocked">Blokkert</string>
+    <string name="msg_not_registered_phone">Nummeret finnes ikke i vårt register, velg nytt medlem
+        og registrer deg.
+    </string>
+    <string name="msg_blocked_phone">Mobilnummer
+        <xliff:g id="user">%1$s</xliff:g>
+        er blokkert av skolen din, vennligst kontakt skolen din.
+    </string>
+    <string name="str_photo_edit">Juster bilde</string>
+    <string name="str_done">Ferdig</string>
+    <string name="msg_no_period_subject">Ingen skole i dag.</string>
+    <string name="success_new_register_noparent2">Husk at du når som helst kan registrere foresatte
+        2, ved å gå inn på profilen og legge til info. Foresatte 2 vil da kunne kommunisere med
+        skolen.
+    </string>
+    <string name="str_confirm">Bekreftelse</string>
+    <string name="msg_confirm_register_noparent2">Ønsker du å registrere uten info om foresatte2?
+        dette vil medføre at foresatte 2 ikke kan kommunisere med skolen. Anbefales å registrere
+        foresatte2 info.
+    </string>
+    <string name="str_yes">Ja</string>
+    <string name="str_no">Nei</string>
+    <string name="call">Ring</string>
+    <string name="account">Ikke medlem fra før?</string>
+    <string name="optional">Foresatte2 registrering er valgfritt, anbefales å registrere nå.
+    </string>
+    <string name="search">Søk</string>
+    <string name="search_term">Velg søk</string>
+    <string name="search_result">Ingen treff funnet.</string>
+    <string name="search_class_grad">Velg klassetrinn</string>
+    <string name="select_cls_nm">Velg klassenavn</string>
+    <string name="school_info">SKOLE INFORMASJON</string>
+    <string name="parent_info">FORESATTE INFORMASJON</string>
+    <string name="parent1">Foresatte1</string>
+    <string name="parent2">Foresatte2</string>
+    <string name="teacher_nm">lærer Name</string>
+    <string name="gp">Gruppe-\nmeldinger</string><!--Info. fra\n skolen--><!--Felles-\nmeldinger-->
+    <string name="send_abs">Meld fravær</string>
+    <string name="full_day">Hele dagen</string>
+    <string name="download">Last ned</string>
+    <string name="str_days1">Dager</string>
+    <string name="str_hours1">Timer</string>
+    <string name="old_pincode">Nåværende pin-kode</string>
+    <string name="send_abs_single_line">Meld fravær</string>
+    <string name="absent_statistic">Fraværsrapport</string>
+    <string name="pdf_notavailalbe">PDF "reader" er ikke tilgjengelig på enheten din. Vennligst Last
+        ned fra playstore.
+    </string>
+    <string name="copy">Kopiere</string>
+    <string name="paste">Lim inn</string>
+    <string name="semester">Semester</string>
+    <string name="subject_name">Fagnavn</string>
+    <string name="marks">Karakterer</string>
+    <string name="study_yr">Skoleår</string>
+    <string name="error_yr">Velg årstall</string>
+    <string name="server_error">Beklager, serverfeil. Prøv igjen senere.</string>
+    <string name="comment">Kommentar</string>
+    <string name="grade">Klassetrinn</string>
+    <string name="char_heading">Orden og oppførsel</string>
+    <string name="no_record">Ingen opptak funnet</string>
+    <string name="first_sm">Første semester</string>
+    <string name="second_sm">Sekund semester</string>
+    <string name="third_sm">Tredje semester</string>
+    <string name="good">God</string>
+    <string name="no_data">Ingen data finnes</string>
+    <string name="typing">Skriver......</string>
+    <string name="select_yr">Velg år</string>
+    <string name="system_generated">Meldingsmal</string>
+    <string name="custom_generated">Skriv melding</string>
+    <string name="send_msg">Send melding</string>
+    <string name="emergency_msg">Nødmelding</string>
+    <string name="successmsg">Nødmelding er sendt!</string>
+    <string name="select_msg">Velg melding</string>
+    <string name="invalid_date">Ugyldig dato</string>
+    <string name="str_emeregency">Dette er en advarsel</string>
+    <string name="yesterday">yesterday</string>
+    <string-array name="drawer_item">
+        <item>Hjem</item>
+        <item>Min profil</item>
+        <item>Fraværsmelding</item>
+        <item>Legg til/Velg elev</item>
+        <item>Orden og atferd</item><!--Orden og oppførsel rapport-->
+        <item>Vurderingsrapport</item><!--Rapportere kort-->
+        <item>Fraværsrapport</item>
+        <item>Tlf. foresatte</item>
+        <item>Kontakt CSlink</item>
+        <item>Innstillinger</item>
+    </string-array>
+
+    <string-array name="emergency_message">
+        <item>Det er en nødsituasjon på skolen som følge av brann i skolebygningen.</item>
+        <item>Det er en nødsituasjon på skolen som følge av trusler eller terror.</item>
+        <item>Det er en nødsituasjon på skolen på grunn av flom og uvær.</item>
+        </string-array>
+
+    <string name="pin_code_forgot_text">Glemt pin-kode</string>
+    <string name="msg_password_notequal">Nytt passord er ikke lik valgt passord</string>
+    <string name="msg_failed_change_pincode">Pin-kode endringer ble ikke godkjent/prøv igjen
+    </string>
+    <string name="msg_invalid_phone_password">Mobil nummer er ugyldig! Vennligst bekreft igjen!
+    </string>
+    <string name="sem">Semester</string>
+    <string name="pin_code_step_change">Tast inn pin-kode</string>
+    <string name="msg_notvalidvericod">Bekreftelseskode er feil, vennligst prøv igjen!</string>
+    <string name="number">+47</string>
+    <string name="time">00:00</string>
+    <string name="dash">-</string>
+    <string name="diff_num">Vennligst registrer deg med forskjellig antall for Parent2</string>
+    <string name="connection">Tilkobling tilgjengelig</string>
+    <string name="changepincode_value">Lagre pin-kode</string>
+    <string name="feedback_msg">Skriv tilbakemelding</string>
+    <string name="msg_input_parent3_name">Tast inn navn til foresatte 3</string>
+    <string name="msg_input_parent3_phone">Tast inn mobilenummer til foresatte 3</string>
+    <string name="crash_dialog_comment_prompt">Du kan legge til dine kommentarer om problemet under</string>
+    <string name="connect">Kobler til...</string>
+    <string name="no_student_msg">Ingen student tilgjengelig</string>
+    <string name="about_link">www.cslink.no</string>
+    <string name="suppport">support@cslink.no</string>
+    <string name="more_info">Mer informasjon finnes på</string>
+
+    <string name="str_school_withoutdot">Skole</string>
+    <string name="str_class_withoutdot">Klasse</string>
+    <string name="profile_classincharge_withoutdot">Kontaktlærer</string>
+    <string name="profile_hint_phone_withoutdot">Mobil</string>
+    <string name="gmail_installation">Vennligst installer Gmail fra lekebutikken.</string>
+    <string name="test_info">Vurdering</string>
+    <string name="gen_pdf">Generer PDF</string>
+    <string name="download_pdf">Last ned PDF</string>
+    <string name="testno">Vurdering</string>
+    <string name="exam_about">Emne</string>
+    <string name="clsname">Klasse</string>
+    <string name="date_test">Dato</string>
+    <string name="error_select">Velg emne for å laste ned pdf</string>
+    <string name="test">Vurdering</string>
+    <string name="no_rate">Ikke fylt inn</string>
+    <string name="teachernm">Lærer</string>
+    <string name="pdf_mark">Vurdering</string>
+    <string name="error_sub">Velg fag</string>
+    <string name="collon"> : </string>
+    <string name="delete_desc">Elevens Disiplin &amp; Atferd er blitt slettet</string>
+    <string name="delete_item">Ønsker du å slette disse dataene?</string>
+    <string name="date">Dato</string>
+    <string name="teacher_head">Lærer</string>
+    <string name="category">Kategori:</string>
+    <string name="remarks">Anmerkning</string>
+    <string name="discipline_behave">Orden og Atferd</string>
+    <string name="no_comment">Ingen kommentar</string>
+    <string name="error_todate_msg">Til dags dato bør være senere enn fra dato</string>
+    <string name="error_fromdate_msg">Fra dato må være før ankomst enn hittil</string>
+    <!--<string name="gp_title">Info. fra\n skolen</string>-->
+    <string name="pincode_error">Tast inn pin-kode på 4 siffer</string>
+    <string name="is_image_attached">Inkluder bilde i pdf rapport</string>
+    <string name="pdf_load_issue">Pdf kunne ikke laste fra serveren</string>
+
+    <!--  String resources for first screen  -->
+    <string name="start_are_you_a_teacher">Are you a Teacher?</string>
+    <string name="start_are_you_a_parent">Are you a Parent?</string>
+
+    <string name="checked_in">Checked-in</string>
+    <string name="checked_out">Checked-out</string>
+
+    <string name="sfo_title">SFO</string>
+    <string name="view_all">VIEW ALL</string>
+    <string name="not_arrived_title">NOT ARRIVED</string>
+    <string name="checked_out_title">CHECKED-OUT</string>
+    <string name="activities_title">ACTIVITIES</string>
+
+    <string name="message_title">MESSAGE</string>
+    <string name="group_message_title">GROUP MESSAGE</string>
+    <string name="sfo_homepage_title">SFO Home Page</string>
+</resources>

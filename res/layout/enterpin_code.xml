@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rel_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_theam_color"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty_top"
+            android:background="@color/color_blue"
+            android:gravity="center"
+            android:text="@string/str_pincode"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/normal_text_size"
+            />
+        <LinearLayout
+            android:id="@+id/btnbck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/imgback"
+                android:layout_width="@dimen/thirty_top"
+                android:layout_height="@dimen/btn_height"
+                android:gravity="left"
+                android:onClick="back"
+                android:paddingBottom="@dimen/seven_space"
+                android:paddingLeft="@dimen/ten_all_side_padding"
+                android:paddingTop="@dimen/fiften_space"
+                android:src="@drawable/ic_back"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2"
+            android:visibility="gone"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/textViewemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/ten_all_side_padding"
+                android:paddingRight="@dimen/ten_all_side_padding"
+                android:paddingTop="@dimen/forty_margin"
+                android:text="@string/str_input_pincode_desc"
+                android:textColor="@color/font_gray_blue"
+                android:textSize="@dimen/normal_text_size"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum=".1"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.10"
+                android:orientation="vertical"
+                android:visibility="gone">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.8"
+                android:background="@drawable/round_white"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/editText_currentpincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ems="10"
+                    android:padding="@dimen/seven_space"
+                    android:singleLine="true"
+                    android:textColor="@color/app_theam_color"
+                    android:textColorHint="@color/app_theam_color"
+                    android:visibility="gone"
+                    ></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:orientation="vertical"
+                android:visibility="gone">
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/editText_confirmpincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fifty_top"
+                android:layout_marginRight="@dimen/fifty_top"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/str_pincode"
+                android:inputType="numberPassword"
+                android:maxLength="4"
+                android:padding="@dimen/ten_all_side_padding"
+                android:textColor="@color/color_white"
+                android:textColorHint="@color/color_gray"
+                android:textSize="@dimen/normal_text_size">
+                <requestFocus/>
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="1">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <LinearLayout
+                android:id="@+id/send"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/ten_all_side_padding"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="1">
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/forty_margin"
+                    android:layout_marginRight="@dimen/forty_margin"
+                    android:background="@drawable/btn_cmd"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/str_login"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/textsize"
+                    android:visibility="visible"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!--  <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="0.05"
+             android:orientation="vertical" >
+         </LinearLayout> -->
+
+        <LinearLayout
+            android:id="@+id/ll_forgotpassword"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/btn_forgotpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/fifty_top"
+                android:background="@android:color/transparent"
+                android:gravity="left|bottom"
+                android:padding="10dp"
+                android:text="@string/str_forgot_pincode"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/small_text_size"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.8"
+                android:background="@drawable/round_white"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="1"
+                >
+
+
+                <EditText
+                    android:id="@+id/editText_newpincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ems="10"
+                    android:padding="@dimen/seven_space"
+                    android:singleLine="true"
+                    android:textColor="@color/app_theam_color"
+                    android:textColorHint="@color/app_theam_color"
+                    android:visibility="gone"
+                    ></EditText>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="vertical"
+            android:visibility="gone">
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

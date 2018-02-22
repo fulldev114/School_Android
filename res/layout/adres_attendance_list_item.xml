@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RelativeLayout android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                >
+                <com.common.view.CircularImageView
+                    android:layout_width="@dimen/fifty_top"
+                    android:layout_height="@dimen/fifty_top"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/circle_blue_full"/>
+
+
+                <com.common.view.CircularImageView
+                    android:id="@+id/imgProfile"
+                    android:layout_width="@dimen/btn_height"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/cslink_avatar_unknown"/>
+            </RelativeLayout>
+
+            <!--Start viewline-->
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+                <!--Start student name and periods-->
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_gravity="center_vertical"
+                              android:layout_toRightOf="@+id/imageView1"
+                              android:gravity="center"
+                              android:orientation="vertical"
+                              android:paddingLeft="@dimen/five_all_side_padding">
+                    <com.widget.textstyle.MyTextView_Signika_Semibold
+                        android:id="@+id/txtName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_student_name"
+                        android:textColor="@color/color_blue_p"
+                        android:textSize="@dimen/small_text_size"/>
+
+                    <!--Start Number of Periods with reason
+                      android:layout_weight="0.68"
+                       android:layout_weight="0.32"-->
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginTop="@dimen/five_all_side_padding"
+                                    android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/lin_periods"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/five_all_side_padding"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+
+                            <com.widget.textstyle.MyTextView_Signika_Regular
+                                android:id="@+id/img1"
+                                style="@style/text_attendenc_number"
+                                android:text="1"
+                                android:visibility="invisible"/>
+
+                            <com.widget.textstyle.MyTextView_Signika_Regular
+                                android:id="@+id/img2"
+                                style="@style/text_attendenc_number"
+                                android:text="2"
+                                android:visibility="invisible"/>
+
+                            <com.widget.textstyle.MyTextView_Signika_Regular
+                                android:id="@+id/img3"
+                                style="@style/text_attendenc_number"
+                                android:text="3"
+                                android:visibility="invisible"/>
+
+                            <com.widget.textstyle.MyTextView_Signika_Regular
+                                android:id="@+id/img4"
+                                style="@style/text_attendenc_number"
+                                android:text="4"
+                                android:visibility="invisible"/>
+
+                            <com.widget.textstyle.MyTextView_Signika_Regular
+                                android:id="@+id/img5"
+                                style="@style/text_attendenc_number"
+                                android:text="5"
+                                android:visibility="invisible"/>
+
+                            <com.widget.textstyle.MyTextView_Signika_Regular
+                                android:id="@+id/img6"
+                                style="@style/text_attendenc_number"
+                                android:text="6"
+                                android:visibility="invisible"/>
+
+                            <com.widget.textstyle.MyTextView_Signika_Regular
+                                android:id="@+id/img7"
+                                style="@style/text_attendenc_number"
+                                android:text="7"
+                                android:visibility="gone"
+                                />
+
+
+                            <com.widget.textstyle.MyTextView_Signika_Regular
+                                android:id="@+id/img8"
+                                style="@style/text_attendenc_number"
+                                android:text="8"
+                                android:visibility="gone"/>
+
+                        </LinearLayout>
+
+                        <com.widget.textstyle.MyTextView_Signika_Regular
+                            android:id="@+id/txt_reason"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/lin_periods"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="@dimen/five_all_side_padding"
+                            android:textColor="@color/white_light"
+                            android:textSize="@dimen/small_text_size"
+                            android:visibility="gone"/>
+                    </RelativeLayout>
+                    <!--End Number of Periods with reason-->
+                </LinearLayout>
+                <!--End student and number of Periods-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/half_dpi"
+                    android:layout_marginTop="@dimen/ten_all_side_padding"
+                    android:background="@color/color_line_blue"/>
+            </LinearLayout>
+            <!--End view line-->
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

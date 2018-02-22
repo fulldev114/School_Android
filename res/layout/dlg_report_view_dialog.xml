@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout
+    android:id="@+id/rootView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/alert_dialog_bg"
+    >
+   <!-- <ScrollView
+        style="@style/scroll_bar"
+        android:paddingBottom="@dimen/twenty_size">-->
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/lin_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:visibility="visible">
+                <RelativeLayout
+                    android:id="@+id/userprofile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/top_leftright_corner_header_blue"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/ten_all_side_padding"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+                        <com.widget.textstyle.MyTextView_Signika_Regular
+                            android:id="@+id/txtTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/str_isstudentname"
+                            android:textColor="@color/white_light"
+                            android:textSize="@dimen/large_text_size"
+                            />
+                        <com.widget.textstyle.MyTextView_Signika_Regular
+                            android:id="@+id/text_class"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/str_class"
+                            android:textColor="@color/white_light"
+                            android:textSize="@dimen/normal_text_size"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lay_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/btn_height"
+                        android:layout_alignParentRight="true"
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_edit"
+                            android:layout_width="@dimen/fifty_five"
+                            android:layout_height="match_parent"
+                            android:gravity="right"
+                            android:padding="@dimen/ten_all_side_padding"
+                            android:src="@drawable/edit_icon"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/lytFullDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/_gray"
+                    android:orientation="horizontal">
+                    <com.widget.textstyle.MyTextView_Signika_Regular
+                        android:id="@+id/txt_sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/twelve_dp"
+                        android:gravity="left"
+                        android:text="@string/subject_name"
+                        android:textColor="@color/color_dark_blue"
+                        android:textSize="@dimen/normal_text_size"
+                        android:visibility="visible"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/middle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lin_top"
+                android:layout_above="@+id/lin_chk"
+                android:orientation="vertical"
+                >
+
+                <include
+                    layout="@layout/mark_view_info_detail"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lin_chk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/lin_footer"
+                android:paddingLeft="@dimen/fiften_space"
+                android:layout_margin="@dimen/five_all_side_padding"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/chk_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/checkbox_image"
+                    />
+                <com.widget.textstyle.MyTextView_Signika_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/is_image_attached"
+                    android:textColor="@color/color_dark_blue"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/seven_space"
+                    android:textSize="@dimen/small_text_size"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lin_footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/twenty_size"
+                android:layout_marginBottom="@dimen/twenty_size"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/twenty_size"
+                android:paddingRight="@dimen/twenty_size">
+
+                <com.widget.textstyle.MyTextView_Signika_Regular
+                    android:id="@+id/txt_ok"
+                    style="@style/attendance_popup"
+                    android:layout_marginRight="@dimen/five_all_side_padding"
+                    android:layout_weight="0.70"
+                    android:text="@string/str_ok"
+                    />
+
+                <com.widget.textstyle.MyTextView_Signika_Regular
+                    android:id="@+id/txt_download"
+                    style="@style/attendance_popup"
+                    android:layout_marginLeft="@dimen/fiften_space"
+                    android:layout_weight="0.30"
+                    android:text="@string/download_pdf"
+
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+    <!--</ScrollView>-->
+</RelativeLayout>
+
+
